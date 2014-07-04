@@ -16,3 +16,4 @@
 
 (load-file "~/.emacs.d/helm-ag-r.el")
 (load-file "~/.emacs.d/window.el")
+(load-file "~/.emacs.d/highlight.el")
