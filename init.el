@@ -17,3 +17,4 @@
 (load-file "~/.emacs.d/helm-ag.el")
 (load-file "~/.emacs.d/window.el")
 (load-file "~/.emacs.d/highlight.el")
+(load-file "~/.emacs.d/keybinding.el")
