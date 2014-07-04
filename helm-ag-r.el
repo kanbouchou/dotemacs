@@ -1,6 +1,5 @@
 (require 'helm-ag-r)
 (setq
- helm-ag-r-google-contacts-user "your gmail address"
  helm-ag-r-google-contacts-lang "ja_JP.UTF-8"
  helm-ag-r-option-list '("-S -U --hidden"
                          "-S -U -g")

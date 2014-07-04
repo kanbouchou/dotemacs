@@ -14,6 +14,6 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(load-file "~/.emacs.d/helm-ag-r.el")
+(load-file "~/.emacs.d/helm-ag.el")
 (load-file "~/.emacs.d/window.el")
 (load-file "~/.emacs.d/highlight.el")
