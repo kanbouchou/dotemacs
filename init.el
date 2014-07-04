@@ -1,6 +1,3 @@
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-
 ;; ~/.emacs.d/site-lisp 以下全部読み込み
 (let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
   (add-to-list 'load-path default-directory)
@@ -18,3 +15,4 @@
 (package-initialize)
 
 (load-file "~/.emacs.d/helm-ag-r.el")
+(load-file "~/.emacs.d/window.el")
