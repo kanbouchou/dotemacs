@@ -18,3 +18,4 @@
 (load-file "~/.emacs.d/window.el")
 (load-file "~/.emacs.d/highlight.el")
 (load-file "~/.emacs.d/keybinding.el")
+(load-file "~/.emacs.d/ediff.el")
