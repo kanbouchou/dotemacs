@@ -4,7 +4,15 @@
 (setq show-paren-style 'mixed)
 
 ;;; 現在行を目立たせる
-(global-hl-line-mode)
+(defface my-hl-line-face
+  '((((class color) (background dark))
+     (:background "NaviBlue" t))
+    (((class color) (background light))
+     (:background "LightGoldenrodYellow" t))
+    (t (:bold t)))
+  "hl-line's my face")
+(setq hl-line-face 'my-hl-line-face)
+(global-hl-line-mode t)
 
 ;;; カーソルの位置が何文字目かを表示する
 (column-number-mode t)
