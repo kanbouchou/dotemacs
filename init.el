@@ -10,7 +10,8 @@
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
       (normal-top-level-add-subdirs-to-load-path)))
 
-(setq load-path (cons "~/.emacs.d/elpa/init-loader-20140216.2240" load-path))
+
+
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
@@ -20,5 +21,8 @@
 (load-file "~/.emacs.d/window.el")
 (load-file "~/.emacs.d/highlight.el")
 (load-file "~/.emacs.d/grep-a-lot.el")
+
 (load-file "~/.emacs.d/keybinding.el")
 (load-file "~/.emacs.d/ediff.el")
+
+(global-git-gutter-mode +1)

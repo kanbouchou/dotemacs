@@ -3,6 +3,8 @@
 (defvar installing-package-list
   '(
     ;; ここに使っているパッケージを書く。
+    git-gutter
+    magit
     helm
     helm-ag
     helm-ls-git
