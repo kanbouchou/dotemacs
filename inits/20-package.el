@@ -3,10 +3,13 @@
 (defvar installing-package-list
   '(
     ;; ここに使っているパッケージを書く。
+    color-theme
+    cmake-mode
     git-gutter
     magit
     helm
     helm-ag
+    helm-ag-r
     helm-ls-git
     yaml-mode
     ))
