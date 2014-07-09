@@ -20,7 +20,8 @@
 (load-file "~/.emacs.d/helm-ag.el")
 (load-file "~/.emacs.d/window.el")
 (load-file "~/.emacs.d/highlight.el")
-(load-file "~/.emacs.d/grep-a-lot.el")
+;(load-file "~/.emacs.d/grep-a-lot.el")
+(load-file "~/.emacs.d/ag-as-grep.el")
 
 (load-file "~/.emacs.d/keybinding.el")
 (load-file "~/.emacs.d/ediff.el")
