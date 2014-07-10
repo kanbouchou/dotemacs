@@ -12,7 +12,9 @@
     helm-ag-r
     helm-ls-git
     yaml-mode
-    ))
+    volatile-highlights
+    )
+  )
 
 (let ((not-installed (loop for x in installing-package-list
                             when (not (package-installed-p x))
