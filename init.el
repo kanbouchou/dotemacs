@@ -26,5 +26,6 @@
 (load-file "~/.emacs.d/keybinding.el")
 (load-file "~/.emacs.d/ediff.el")
 (load-file "~/.emacs.d/misc.el")
+(load-file "~/.emacs.d/init-cc-mode.el")
 
 (global-git-gutter-mode +1)
