@@ -17,15 +17,15 @@
 (init-loader-load "~/.emacs.d/inits")
 
 
-(load-file "~/.emacs.d/helm-ag.el")
-(load-file "~/.emacs.d/window.el")
-(load-file "~/.emacs.d/highlight.el")
-;(load-file "~/.emacs.d/grep-a-lot.el")
-(load-file "~/.emacs.d/ag-as-grep.el")
+(load-file "~/.emacs.d/init-helm-ag.el")
+(load-file "~/.emacs.d/init-window.el")
+(load-file "~/.emacs.d/init-highlight.el")
+;(load-file "~/.emacs.d/init-grep-a-lot.el")
+(load-file "~/.emacs.d/init-ag-as-grep.el")
 
-(load-file "~/.emacs.d/ediff.el")
-(load-file "~/.emacs.d/misc.el")
+(load-file "~/.emacs.d/init-ediff.el")
+(load-file "~/.emacs.d/init-misc.el")
 (load-file "~/.emacs.d/init-cc-mode.el")
-(load-file "~/.emacs.d/keybinding.el")
+(load-file "~/.emacs.d/init-keybinding.el")
 
 (global-git-gutter-mode +1)
