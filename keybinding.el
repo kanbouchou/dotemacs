@@ -14,11 +14,9 @@
 ;(global-set-key [S-f7]  'git-gutter:previous-hunk)
 
 ;; window operation
-(global-set-key [f6] 'other-window)
+(global-set-key [f6] 'other-window-or-split-horizontally)
 (global-set-key [C-f6] 'delete-other-windows)
-(global-set-key [S-f6] 'follow-delete-other-windows-and-split)
-(global-set-key [f5] 'split-window-horizontally)
-(global-set-key [C-f5] 'split-window-vertically)
+(global-set-key [S-f6] 'split-window-vertically)
 
 ;; find file operation
 (global-set-key [f8] 'helm-recentf)

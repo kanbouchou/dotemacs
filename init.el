@@ -23,9 +23,9 @@
 ;(load-file "~/.emacs.d/grep-a-lot.el")
 (load-file "~/.emacs.d/ag-as-grep.el")
 
-(load-file "~/.emacs.d/keybinding.el")
 (load-file "~/.emacs.d/ediff.el")
 (load-file "~/.emacs.d/misc.el")
 (load-file "~/.emacs.d/init-cc-mode.el")
+(load-file "~/.emacs.d/keybinding.el")
 
 (global-git-gutter-mode +1)

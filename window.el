@@ -23,3 +23,9 @@
     (color-theme-emacs-nw)
     ))
 (setq frame-background-mode 'dark)
+
+(defun other-window-or-split-horizontally ()
+  (interactive)
+  (when (one-window-p)
+    (split-window-horizontally))
+  (other-window 1))
