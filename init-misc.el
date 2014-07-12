@@ -7,7 +7,12 @@
 ;;; 最近開いたファイルを保存する数を増やす
 (setq recentf-max-saved-items 10000)
 
+;;; hooks
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
+
+;;; use alias and environment variables from bash
+(require 'bash-completion)
+(bash-completion-setup)

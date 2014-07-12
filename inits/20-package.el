@@ -3,6 +3,7 @@
 (defvar installing-package-list
   '(
     ;; ここに使っているパッケージを書く。
+    bash-completion
     color-theme
     cmake-mode
     git-gutter
