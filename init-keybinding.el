@@ -18,6 +18,10 @@
 (global-set-key [C-f6] 'delete-other-windows)
 (global-set-key [S-f6] 'split-window-vertically)
 
+;; line operation
+(global-set-key [f5] 'global-linum-mode)
+(global-set-key [C-f5] 'global-hl-line-mode)
+
 ;; find file operation
 (global-set-key [f8] 'helm-recentf)
 (global-set-key [C-f8] 'helm-ls-git-ls)

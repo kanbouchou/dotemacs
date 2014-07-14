@@ -24,8 +24,15 @@
     ))
 (setq frame-background-mode 'dark)
 
+;;; smart multi window management
 (defun other-window-or-split-horizontally ()
   (interactive)
   (when (one-window-p)
     (split-window-horizontally))
   (other-window 1))
+
+(blink-cursor-mode 0)
+
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#3e4446")
+(set-face-foreground 'highlight nil)
