@@ -13,28 +13,30 @@
 ;(global-set-key [f7]    'git-gutter:next-hunk)
 ;(global-set-key [S-f7]  'git-gutter:previous-hunk)
 
-;; window operation
-(global-set-key [f6] 'other-window-or-split-horizontally)
-(global-set-key [C-f6] 'delete-other-windows)
-(global-set-key [S-f6] 'split-window-vertically)
-
-;; line operation
-(global-set-key [f5] 'global-linum-mode)
-(global-set-key [C-f5] 'global-hl-line-mode)
-
-;; find file operation
-(global-set-key [f8] 'helm-recentf)
-(global-set-key [C-f8] 'helm-ls-git-ls)
-
-;; search operation
-(global-set-key [f7]   'helm-ag)
-(global-set-key [C-f7] 'helm-ag-r-from-git-repo)
-(global-set-key [S-f7] 'rgrep)
+(global-set-key [f10] 'next-error)
+(global-set-key [S-f10] 'previous-error)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
 (global-set-key [f9] 'recompile)
 (global-set-key [S-f9] 'compile)
 
-(global-set-key [f10] 'next-error)
-(global-set-key [S-f10] 'previous-error)
+;; window operation
+(global-set-key [f8] 'other-window-or-split-horizontally)
+(global-set-key [C-f8] 'delete-other-windows)
+(global-set-key [S-f8] 'split-window-vertically)
+(global-set-key [M-f8] 'split-window-horizontally)
+
+;; find file operation
+(global-set-key [f7] 'helm-recentf)
+(global-set-key [C-f7] 'helm-ls-git-ls)
+
+;; search operation
+(global-set-key [f6]   'helm-ag)
+(global-set-key [C-f6] 'helm-ag-r-from-git-repo)
+(global-set-key [S-f6] 'rgrep)
+
+
+;; line operation
+(global-set-key [f5] 'global-linum-mode)
+(global-set-key [C-f5] 'global-hl-line-mode)
