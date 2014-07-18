@@ -13,6 +13,7 @@
     helm-ag
     helm-ag-r
     helm-git-files
+    matlab-mode
     migemo
     yaml-mode
     volatile-highlights

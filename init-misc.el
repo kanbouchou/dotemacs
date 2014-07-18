@@ -1,8 +1,8 @@
-(setq history-length 10000) ; 履歴数を大きくする
+(setq history-length 10000) ;;; 履歴数を大きくする
 
-(savehist-mode 1) ; ミニバッファの履歴を保存する
+(savehist-mode 1) ;;; ミニバッファの履歴を保存する
 
-(setq recentf-max-saved-items 10000) ; 最近開いたファイルを保存する数を増やす
+(setq recentf-max-saved-items 10000) ;;; 最近開いたファイルを保存する数を増やす
 
 ;;; hooks
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -22,6 +22,11 @@
 
 (setq kill-whole-line t) ;;; 行の先頭でC-kを一回押すだけで行全体を消去する
 (setq require-final-newline t) ;;; 最終行に必ず一行挿入する
+
+(require 'server)
+(unless (server-running-p)
+  (server-start)
+  )
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
