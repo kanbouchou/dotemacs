@@ -13,6 +13,10 @@
 ;(global-set-key [f7]    'git-gutter:next-hunk)
 ;(global-set-key [S-f7]  'git-gutter:previous-hunk)
 
+(global-set-key [f4] 'align-current)
+(global-set-key [S-f4] 'align-entire)
+(global-set-key [C-f4] 'align-regexp)
+
 (global-set-key [f10] 'next-error)
 (global-set-key [S-f10] 'previous-error)
 
@@ -23,9 +27,8 @@
 
 ;; window operation
 (global-set-key [f8] 'other-window-or-split-horizontally)
-(global-set-key [C-f8] 'delete-other-windows)
-(global-set-key [S-f8] 'split-window-vertically)
-(global-set-key [M-f8] 'split-window-horizontally)
+(global-set-key [C-f8] 'split-window-vertically)
+(global-set-key [S-f8] 'delete-other-windows)
 
 ;; find file operation
 (global-set-key [f7] 'helm-recentf)

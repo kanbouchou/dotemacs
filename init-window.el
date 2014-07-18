@@ -1,9 +1,12 @@
 (setq inhibit-startup-screen t)
 
 (when window-system
-  (menu-bar-mode -1)
-  (tool-bar-mode -1)
+  (menu-bar-mode -1) ; メニューバーを消す
+  (tool-bar-mode -1) ; ツールバーを消す
 )
+
+(require 'generic-x)
+(windmove-default-keybindings)          ; Shift + 矢印キー でウィンドウ間移動
 
 (global-font-lock-mode t)
 (transient-mark-mode 1)			; 選択範囲に色を付ける

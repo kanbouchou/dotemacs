@@ -20,7 +20,7 @@
 (load-file "~/.emacs.d/init-helm-ag.el")
 (load-file "~/.emacs.d/init-window.el")
 (load-file "~/.emacs.d/init-highlight.el")
-(load-file "~/.emacs.d/init-ag-as-grep.el")
+;;;(load-file "~/.emacs.d/init-ag-as-grep.el")
 
 (load-file "~/.emacs.d/init-ediff.el")
 (load-file "~/.emacs.d/init-misc.el")
