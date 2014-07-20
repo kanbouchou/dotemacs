@@ -24,6 +24,7 @@
 
 (load-file "~/.emacs.d/init-ediff.el")
 (load-file "~/.emacs.d/init-misc.el")
+(load-file "~/.emacs.d/init-migemo.el")
 (load-file "~/.emacs.d/init-cc-mode.el")
 (load-file "~/.emacs.d/init-keybinding.el")
 

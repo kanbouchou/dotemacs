@@ -12,6 +12,7 @@
     helm-ag
     helm-ag-r
     helm-ls-git
+    migemo
     yaml-mode
     volatile-highlights
     )
