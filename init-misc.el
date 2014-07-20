@@ -34,4 +34,6 @@
 (require 'wdired)
 (define-key dired-mode-map (kbd "C-x C-q") 'wdired-change-to-wdired-mode)
 
-(delete-selection-mode 1)
+(delete-selection-mode 1) ; overwrite when yanking
+
+(global-auto-revert-mode 1) ; バッファ自動再読み込み
