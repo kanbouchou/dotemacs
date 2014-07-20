@@ -19,3 +19,6 @@
 
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+(require 'wdired)
+(define-key dired-mode-map (kbd "C-x C-q") 'wdired-change-to-wdired-mode)
