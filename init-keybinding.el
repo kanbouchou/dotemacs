@@ -29,7 +29,7 @@
 
 ;; find file operation
 (global-set-key [f7] 'helm-recentf)
-(global-set-key [C-f7] 'helm-ls-git-ls)
+(global-set-key [C-f7] 'my-helm-git-files)
 
 ;; search operation
 (global-set-key [f6]   'helm-ag)

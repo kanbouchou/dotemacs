@@ -11,7 +11,7 @@
     helm
     helm-ag
     helm-ag-r
-    helm-ls-git
+    helm-git-files
     migemo
     yaml-mode
     volatile-highlights
