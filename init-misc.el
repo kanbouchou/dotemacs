@@ -16,3 +16,6 @@
 ;;; use alias and environment variables from bash
 (require 'bash-completion)
 (bash-completion-setup)
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
