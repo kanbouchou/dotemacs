@@ -33,3 +33,5 @@
 
 (require 'wdired)
 (define-key dired-mode-map (kbd "C-x C-q") 'wdired-change-to-wdired-mode)
+
+(delete-selection-mode 1)
