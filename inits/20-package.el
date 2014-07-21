@@ -3,6 +3,7 @@
 (defvar installing-package-list
   '(
     ;; ここに使っているパッケージを書く。
+    ag
     auto-complete
     bash-completion
     color-theme
@@ -15,6 +16,7 @@
     helm-git-files
     matlab-mode
     migemo
+    wgrep-ag
     yaml-mode
     volatile-highlights
     )

@@ -17,6 +17,7 @@
 (init-loader-load "~/.emacs.d/inits")
 
 
+(load-file "~/.emacs.d/init-ag.el")
 (load-file "~/.emacs.d/init-helm-ag.el")
 (load-file "~/.emacs.d/init-window.el")
 (load-file "~/.emacs.d/init-highlight.el")
