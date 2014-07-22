@@ -39,7 +39,9 @@
 (global-set-key [C-f6] 'helm-ag-r-from-git-repo)
 (global-set-key [S-f6] 'rgrep)
 
-
 ;; line operation
 (global-set-key [f5] 'global-linum-mode)
 (global-set-key [C-f5] 'global-hl-line-mode)
+
+(require 'wdired)
+(define-key dired-mode-map (kbd "C-x C-q") 'wdired-change-to-wdired-mode)
