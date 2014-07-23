@@ -34,3 +34,6 @@
 (delete-selection-mode 1) ; overwrite when yanking
 
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
+
+(require 'git-gutter-fringe)
+(global-git-gutter-mode t)

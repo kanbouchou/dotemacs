@@ -9,6 +9,7 @@
     color-theme
     cmake-mode
     git-gutter
+    git-gutter-fringe
     magit
     helm
     helm-ag

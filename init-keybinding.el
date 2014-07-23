@@ -9,9 +9,8 @@
 (global-set-key (kbd "C-c i")   'helm-imenu)
 (global-set-key (kbd "C-x b")   'helm-buffers-list)
 
-(global-set-key (kbd "C-c g")   'git-gutter-mode)
-;(global-set-key [f7]    'git-gutter:next-hunk)
-;(global-set-key [S-f7]  'git-gutter:previous-hunk)
+(global-set-key [f2]    'git-gutter:next-hunk)
+(global-set-key [S-f2]  'git-gutter:previous-hunk)
 
 (global-set-key [f4] 'align-current)
 (global-set-key [S-f4] 'align-entire)
