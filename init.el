@@ -29,5 +29,7 @@
 (load-file "~/.emacs.d/init-cc-mode.el")
 (load-file "~/.emacs.d/init-keybinding.el")
 (load-file "~/.emacs.d/init-auto-complete.el")
+(load-file "~/.emacs.d/init-wgrep-ag.el")
+
 
 (global-git-gutter-mode +1)
