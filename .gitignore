@@ -2,3 +2,5 @@ auto-save-list/*
 elpa/*
 session.*
 *~
+history
+ac-comphist.dat
