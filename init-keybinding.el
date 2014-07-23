@@ -46,4 +46,9 @@
 (require 'wdired)
 (define-key dired-mode-map (kbd "C-x C-q") 'wdired-change-to-wdired-mode)
 
+;; helm-gtags
+(global-set-key [f1] 'helm-gtags-find-tag)
+(global-set-key [C-f1] 'helm-gtags-find-rtag)
+(global-set-key [C-f1] 'helm-gtags-find-symbol)
+
 (global-unset-key (kbd "C-\\")) ; unbind toggle-input-method

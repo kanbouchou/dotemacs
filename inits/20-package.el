@@ -14,6 +14,7 @@
     helm-ag
     helm-ag-r
     helm-git-files
+    helm-gtags
     matlab-mode
     migemo
     wgrep-ag
