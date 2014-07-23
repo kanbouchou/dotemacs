@@ -16,7 +16,7 @@
 
 ;;; helm ag
 (require 'helm-ag)
-(setq helm-ag-base-command "ag --nocolor --nogroup --i")
+(setq helm-ag-base-command "ag --nocolor --nogroup -i")
 (setq helm-ag-insert-at-point 'symbol)
 (setq helm-ag-source-type 'file-line)
 
