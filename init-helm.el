@@ -33,3 +33,8 @@
  ;; helm-ag-r-use-no-highlight t    ; ハイライト無効化
  helm-ag-r-candidate-limit 1000  ; 候補の上限を設定
  )
+
+;;; helm-gtags
+(require 'helm-gtags)
+(setq helm-gtags-auto-update t)
+(setq helm-gtags-read-only t)
