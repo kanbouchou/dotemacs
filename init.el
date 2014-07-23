@@ -18,7 +18,7 @@
 
 
 (load-file "~/.emacs.d/init-ag.el")
-(load-file "~/.emacs.d/init-helm-ag.el")
+(load-file "~/.emacs.d/init-helm.el")
 (load-file "~/.emacs.d/init-window.el")
 (load-file "~/.emacs.d/init-highlight.el")
 ;;;(load-file "~/.emacs.d/init-ag-as-grep.el")
@@ -26,7 +26,6 @@
 (load-file "~/.emacs.d/init-ediff.el")
 (load-file "~/.emacs.d/init-misc.el")
 (load-file "~/.emacs.d/init-migemo.el")
-(load-file "~/.emacs.d/init-helm-git-files.el")
 (load-file "~/.emacs.d/init-cc-mode.el")
 (load-file "~/.emacs.d/init-keybinding.el")
 (load-file "~/.emacs.d/init-auto-complete.el")
