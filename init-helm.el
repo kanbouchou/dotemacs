@@ -1,6 +1,6 @@
 ;;; helm
 (require 'helm-config)
-(setq helm-buffer-max-length 60)
+(setq helm-buffer-max-length 40)
 
 ;;; helm git fiels
 (require 'helm-git-files)
