@@ -45,3 +45,5 @@
 
 (require 'wdired)
 (define-key dired-mode-map (kbd "C-x C-q") 'wdired-change-to-wdired-mode)
+
+(global-unset-key (kbd "C-\\")) ; unbind toggle-input-method
