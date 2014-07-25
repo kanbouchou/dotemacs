@@ -28,8 +28,8 @@
 (global-set-key [C-f5] 'global-hl-line-mode)
 
 ;; search operation
-(global-set-key [f6]   'helm-ag)
-(global-set-key [C-f6] 'helm-ag-r-from-git-repo)
+(global-set-key [f6]   'ag)
+(global-set-key [C-f6] 'helm-ag)
 (global-set-key [S-f6] 'rgrep)
 (global-set-key [M-f6] 'grep-buffers)
 
