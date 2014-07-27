@@ -10,17 +10,17 @@
     cmake-mode
     git-gutter
     git-gutter-fringe
-    magit
     helm
     helm-ag
     helm-ag-r
     helm-git-files
     helm-gtags
+    magit
     matlab-mode
     migemo
+    volatile-highlights
     wgrep-ag
     yaml-mode
-    volatile-highlights
     )
   )
 
