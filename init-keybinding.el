@@ -39,9 +39,8 @@
 (global-set-key [S-f7]          'my-helm-git-files)
 
 ;; window operation
-(global-set-key [f8]            'other-window-or-split-horizontally)
-(global-set-key [C-f8]          'split-window-vertically)
-(global-set-key [S-f8]          'delete-other-windows)
+(global-set-key [f8]            'other-window-or-split)
+(global-set-key [C-f8]          'delete-other-windows)
 
 ;; build operation
 (setq compilation-ask-about-save nil)

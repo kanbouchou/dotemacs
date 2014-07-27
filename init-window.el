@@ -27,12 +27,15 @@
     ))
 (setq frame-background-mode 'dark)
 
-;;; smart multi window management
-(defun other-window-or-split-horizontally ()
+(defun other-window-or-split ()
   (interactive)
-  (when (one-window-p)
-    (split-window-horizontally))
-  (other-window 1))
+  (if (>= (window-body-width) 100)
+      (split-window-horizontally)
+    (if (>= (window-body-height) 40)
+        (split-window-vertically)
+      (other-window 1)))
+  )
+
 
 (blink-cursor-mode 0)
 
