@@ -15,6 +15,7 @@
     helm-ag-r
     helm-git-files
     helm-gtags
+    helm-ls-git
     magit
     matlab-mode
     migemo

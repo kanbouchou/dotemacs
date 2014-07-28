@@ -2,10 +2,15 @@
 (global-set-key (kbd "M-y")   'helm-show-kill-ring)
 
 (global-set-key (kbd "C-;")   'helm-for-files)
-(global-set-key (kbd "C-:")   'helm-buffers-list)
+(global-set-key (kbd "C-:")   'my-helm-git-files)
 
 (global-set-key (kbd "C-c i") 'helm-imenu)
 (global-set-key (kbd "C-c b") 'helm-buffers-list)
+
+;; window operation
+(global-set-key (kbd "C-\+")  'other-window-or-split)
+(global-set-key (kbd "C-\-")  'delete-other-windows)
+
 (global-set-key (kbd "C-c l") 'global-linum-mode) ; line number on left
 (global-set-key (kbd "C-c h") 'global-hl-line-mode) ; hilight current
 
@@ -22,8 +27,8 @@
 
 ;; align
 (global-set-key [f4]          'align-current)
-(global-set-key [S-f4]        'align-entire)
 (global-set-key [C-f4]        'align-regexp)
+(global-set-key [S-f4]        'align-entire)
 
 ;; grep
 (global-set-key [f5]          'helm-resume)
@@ -35,13 +40,8 @@
 (global-set-key [C-S-f6]      'rgrep)
 
 ;; find file operation
-(global-set-key [f7]          'helm-for-files)
+(global-set-key [f7]          'helm-find-files)
 (global-set-key [C-f7]        'my-helm-git-files)
-(global-set-key [S-f7]        'helm-find-files)
-
-;; window operation
-(global-set-key [f8]          'other-window-or-split)
-(global-set-key [C-f8]        'delete-other-windows)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
