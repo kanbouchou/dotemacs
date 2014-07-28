@@ -17,5 +17,5 @@
 (which-function-mode 1)
 
 ;;; spelling check
-(setq-default flyspell-mode t)
+;(setq-default flyspell-mode t)
 (setq ispell-dictionary "american")
