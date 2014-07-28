@@ -42,3 +42,12 @@
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "#3e4446")
 (set-face-foreground 'highlight nil)
+
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-dark-laptop)
+
+(set-face-foreground 'mode-line "white")
+(set-face-background 'mode-line "tomato")
+(set-face-background 'modeline-inactive "dim gray")
+(set-face-background 'default "#000020")
