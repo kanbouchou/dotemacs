@@ -2,7 +2,7 @@
 (global-set-key (kbd "M-y")   'helm-show-kill-ring)
 
 (global-set-key (kbd "C-;")   'helm-for-files)
-(global-set-key (kbd "C-:")   'my-helm-git-files)
+(global-set-key (kbd "C-:")   'helm-git-grep-at-point)
 
 (global-set-key (kbd "C-c i") 'helm-imenu)
 (global-set-key (kbd "C-c b") 'helm-buffers-list)

@@ -14,6 +14,7 @@
     helm-ag
     helm-ag-r
     helm-git-files
+    helm-git-grep
     helm-gtags
     helm-ls-git
     magit
