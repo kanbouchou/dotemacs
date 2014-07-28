@@ -31,7 +31,7 @@
   (interactive)
   (if (>= (window-body-width) (max 100 (/ (window-total-width) 2)))
       (split-window-horizontally)
-    (if (>= (window-body-height) (max 40 (/ (window--total-height) 2)))
+    (if (>= (window-body-height) (max 40 (/ (window-total-height) 2)))
         (split-window-vertically)
       (other-window 1)))
   )
