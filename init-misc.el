@@ -37,3 +37,6 @@
 
 (require 'git-gutter-fringe)
 (global-git-gutter-mode t)
+
+(require 'smartparens-config)
+(smartparens-global-mode t)

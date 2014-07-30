@@ -20,6 +20,7 @@
     magit
     matlab-mode
     migemo
+    smartparens
     volatile-highlights
     wgrep-ag
     yaml-mode
