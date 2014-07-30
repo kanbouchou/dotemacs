@@ -35,8 +35,7 @@
 
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
 
-(require 'git-gutter-fringe)
-(global-git-gutter-mode t)
+(require 'git-gutter-fringe+)
 
 (require 'smartparens-config)
 (smartparens-global-mode t)

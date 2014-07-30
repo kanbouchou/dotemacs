@@ -8,8 +8,8 @@
     bash-completion
     color-theme
     cmake-mode
-    git-gutter
-    git-gutter-fringe
+    git-gutter+
+    git-gutter-fringe+
     helm
     helm-ag
     helm-ag-r
