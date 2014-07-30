@@ -32,11 +32,7 @@
    (cpp-highlight-buffer t)
    (define-key c-mode-base-map (kbd "C-c i") 'my-insert-input-comment)
    (define-key c-mode-base-map (kbd "C-c o") 'my-insert-output-comment)
-   (define-key c-mode-base-map (kbd "C-c b") 'my-insert-inout-comment)
-   (local-set-key [f1] 'helm-gtags-find-tag)
-   (local-set-key [C-S-f1] 'helm-gtags-find-rtag)
-   (local-set-key [C-f1] 'helm-gtags-find-symbol)
-   (local-set-key [f2] 'helm-gtags-pop-stack))
+   (define-key c-mode-base-map (kbd "C-c b") 'my-insert-inout-comment))
 (add-hook 'c-mode-common-hook 'my-cc-mode-hook)
 
 ;; c-mode
