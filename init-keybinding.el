@@ -15,7 +15,7 @@
 (global-set-key (kbd "C-c h") 'global-hl-line-mode) ; hilight current
 
 ;; git
-(global-set-key [f3]          'magit-status)
+(global-set-key [f3]          'git-gutter-mode)
 (global-set-key [C-f3]        'git-gutter:next-hunk)
 (global-set-key [S-f3]        'git-gutter:previous-hunk)
 
