@@ -19,7 +19,6 @@
     helm-ls-git
     magit
     matlab-mode
-    migemo
     smartparens
     volatile-highlights
     wgrep-ag
