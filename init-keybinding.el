@@ -3,6 +3,7 @@
 
 (global-set-key (kbd "C-;")   'helm-for-files)
 (global-set-key (kbd "C-:")   'helm-git-grep-at-point)
+(global-set-key (kbd "C-.")   'helm-find-files)
 
 (global-set-key (kbd "C-c C-i") 'helm-imenu)
 (global-set-key (kbd "C-^")   'helm-resume)
@@ -11,18 +12,22 @@
 (global-set-key (kbd "C-\+")  'other-window-or-split)
 (global-set-key (kbd "C-\-")  'delete-other-windows)
 
-(global-set-key (kbd "C-c l") 'global-linum-mode) ; line number on left
-(global-set-key (kbd "C-c h") 'global-hl-line-mode) ; hilight current
+;; inline display
+(global-set-key [f1]          'global-linum-mode)
+(global-set-key [C-f1]        'git-gutter+-mode)
 
-;; git
-(global-set-key [f3]          'git-gutter-mode)
-(global-set-key [C-f3]        'git-gutter:next-hunk)
-(global-set-key [S-f3]        'git-gutter:previous-hunk)
+(global-set-key [f2]          'git-gutter+-next-hunk)
+(global-set-key [S-f2]        'git-gutter+-previous-hunk)
+
+
+;; beautifulizer
+(load "/usr/share/emacs/site-lisp/clang-format-3.4/clang-format.el")
+(global-set-key [f3]          'clang-format-region)
+(global-set-key [C-f3]        'ispell)
 
 ;; align
 (global-set-key [f4]          'align-current)
 (global-set-key [C-f4]        'align-regexp)
-(global-set-key [S-f4]        'align-entire)
 
 
 ;; search operation by ag
