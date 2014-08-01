@@ -15,6 +15,7 @@
 ;; inline display
 (global-set-key [f1]          'global-linum-mode)
 (global-set-key [C-f1]        'git-gutter+-mode)
+(global-set-key [S-f1]        'global-hl-line-mode)
 
 (global-set-key [f2]          'git-gutter+-next-hunk)
 (global-set-key [S-f2]        'git-gutter+-previous-hunk)
@@ -29,6 +30,11 @@
 (global-set-key [f4]          'align-current)
 (global-set-key [C-f4]        'align-regexp)
 
+;; helm-gtags
+(global-set-key [F5]         'helm-gtags-find-tag)
+(global-set-key [C-f5]       'helm-gtags-find-rtag)
+(global-set-key [S-f5]       'helm-gtags-find-symbol)
+(global-set-key [f6]         'helm-gtags-pop-stack)
 
 ;; search operation by ag
 (global-set-key [f7]          'ag)
@@ -50,11 +56,5 @@
 ;; error navigation
 (global-set-key [f10]         'next-error)
 (global-set-key [S-f10]       'previous-error)
-
-;; helm-gtags
-(global-set-key [f11]         'helm-gtags-find-tag)
-(global-set-key [C-f11]       'helm-gtags-find-rtag)
-(global-set-key [S-f11]       'helm-gtags-find-symbol)
-(global-set-key [f12]         'helm-gtags-pop-stack)
 
 (global-unset-key (kbd "C-\\")) ; unbind toggle-input-method
