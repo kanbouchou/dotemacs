@@ -44,3 +44,5 @@
 (global-linum-mode t)
 
 (fset 'yes-or-no-p 'y-or-n-p) ; y/n instead of yes/no
+
+(require 'generic-x)
