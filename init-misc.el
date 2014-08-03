@@ -36,8 +36,11 @@
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
 
 (require 'git-gutter-fringe+)
+(global-git-gutter+-mode t)
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
+
+(global-linum-mode t)
 
 (fset 'yes-or-no-p 'y-or-n-p) ; y/n instead of yes/no
