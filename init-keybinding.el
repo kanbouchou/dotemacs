@@ -27,6 +27,10 @@
 (global-set-key [S-f1]       'flyspell-mode)
 (global-set-key [f1]         'flyspell-goto-next-error)
 
+;; git
+(global-set-key [f2]         'magit-status)
+(global-set-key [C-f2]       'global-git-gutter+-mode)
+
 ;; beautifulizer
 (load "/usr/share/emacs/site-lisp/clang-format-3.4/clang-format.el")
 (global-set-key [f3]         'clang-format-region)
