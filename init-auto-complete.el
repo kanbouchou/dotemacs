@@ -22,3 +22,18 @@
   (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
   (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
   )
+
+(require 'auto-complete-clang)
+
+(defun my-ac-config ()
+  (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))
+
+(defun my-ac-cc-mode-setup ()
+    (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources))
+    (setq ac-clang-prefix-header "~/.emacs.d/pch/stdafx.pch")
+    (setq ac-clang-flags '("-w" "-ferror-limit" "1"))
+    )
+(add-hook 'c-mode-hook 'my-ac-cc-mode-setup)
+(add-hook 'c++-mode-hook 'my-ac-cc-mode-setup)
+
+(my-ac-config)

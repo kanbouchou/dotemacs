@@ -5,6 +5,7 @@
     ;; ここに使っているパッケージを書く。
     ag
     auto-complete
+    auto-complete-clang
     bash-completion
     color-theme
     cmake-mode
