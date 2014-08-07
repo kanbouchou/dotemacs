@@ -1,4 +1,5 @@
-// clang++ -cc1 -emit-pch -x c++-header ./stdafx.hh -o stdafx.pch -I /usr/local/include/ -I /usr/lib/clang/3.4/include -I /usr/lib/gcc/i686-linux-gnu/4.8/include -I /usr/include/i386-linux-gnu/ -I /usr/include/ -I /usr/include/c++/4.8 -I /usr/include/i386-linux-gnu/c++/4.8/
+// echo "" | (g++ -v -x c++ -E -) 2>&1 | grep include | grep -v = | grep -v ignor | grep -v \# | sed 's/.*/-I&/' | xargs clang++ -cc1 -emit-pch -x c++-header ~/.emacs.d/pch/stdafx.hh -o ~/.emacs.d/pch/stdafx.pch
 
 #include <iostream>
 #include <vector>
+#include <string>

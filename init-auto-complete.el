@@ -24,15 +24,20 @@
   )
 
 (require 'auto-complete-clang)
-
 (defun my-ac-config ()
-  (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))
+  (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers)))
 
 (defun my-ac-cc-mode-setup ()
     (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources))
     (setq ac-clang-prefix-header "~/.emacs.d/pch/stdafx.pch")
-    (setq ac-clang-flags '("-w" "-ferror-limit" "1"))
-    )
+    (setq ac-clang-cflags (append '("-I /usr/include/c++/4.8") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/include/i386-linux-gnu/c++/4.8") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/include/c++/4.8/backward") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/lib/gcc/i686-linux-gnu/4.8/include") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/local/include") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/include/i386-linux-gnu") ac-clang-cflags))
+    (setq ac-clang-cflags (append '("-I /usr/include") ac-clang-cflags)))
 (add-hook 'c-mode-hook 'my-ac-cc-mode-setup)
 (add-hook 'c++-mode-hook 'my-ac-cc-mode-setup)
 
