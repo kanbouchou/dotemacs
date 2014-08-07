@@ -30,14 +30,19 @@
 (defun my-ac-cc-mode-setup ()
     (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources))
     (setq ac-clang-prefix-header "~/.emacs.d/pch/stdafx.pch")
-    (setq ac-clang-cflags (append '("-I /usr/include/c++/4.8") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/include/i386-linux-gnu/c++/4.8") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/include/c++/4.8/backward") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/lib/gcc/i686-linux-gnu/4.8/include") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/local/include") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/include/i386-linux-gnu") ac-clang-cflags))
-    (setq ac-clang-cflags (append '("-I /usr/include") ac-clang-cflags)))
+      (setq ac-clang-flags (append
+      (mapcar (lambda (item)(concat "-I" item))
+              (split-string
+               "
+ /usr/include/c++/4.8
+ /usr/include/i386-linux-gnu/c++/4.8
+ /usr/include/c++/4.8/backward
+ /usr/lib/gcc/i686-linux-gnu/4.8/include
+ /usr/local/include
+ /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
+ /usr/include/i386-linux-gnu
+ /usr/include
+")) ac-clang-flags )))
 (add-hook 'c-mode-hook 'my-ac-cc-mode-setup)
 (add-hook 'c++-mode-hook 'my-ac-cc-mode-setup)
 
