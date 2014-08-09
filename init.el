@@ -28,5 +28,6 @@
 (load-file "~/.emacs.d/init-misc.el")
 (load-file "~/.emacs.d/init-cc-mode.el")
 (load-file "~/.emacs.d/init-keybinding.el")
-(load-file "~/.emacs.d/init-auto-complete.el")
+;(load-file "~/.emacs.d/init-auto-complete.el")
+(load-file "~/.emacs.d/init-company.el")
 (load-file "~/.emacs.d/init-wgrep-ag.el")

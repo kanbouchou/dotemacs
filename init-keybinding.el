@@ -18,6 +18,8 @@
 (global-set-key (kbd "C-\+") 'other-window-or-split)
 (global-set-key (kbd "C-\-") 'delete-other-windows)
 
+(global-set-key [C-tab]      'company-complete)
+
 ;; line navigation
 (global-set-key [M-up]       'beginning-of-buffer)
 (global-set-key [M-down]     'end-of-buffer)

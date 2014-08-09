@@ -8,6 +8,7 @@
     auto-complete-clang
     bash-completion
     color-theme
+    company
     cmake-mode
     git-gutter+
     git-gutter-fringe+
