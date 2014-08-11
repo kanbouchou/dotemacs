@@ -1,3 +1,6 @@
+;; remove company-clang--handle-error from company-clang.el
+;; otherwise it hangs when clang fails to autocomplete
+
 (require 'company)
 
 (defun my-company-cc-mode-setup ()
@@ -14,7 +17,17 @@
  /usr/include/i386-linux-gnu
  /usr/include
  /usr/lib/llvm-3.4/include
-"))))
+")))
+  (add-to-list 'company-dabbrev-code-modes 'c++-mode)
+  (setq company-idle-delay 0)
+)
+
 (add-hook 'c-mode-hook 'my-company-cc-mode-setup)
 (add-hook 'c++-mode-hook 'my-company-cc-mode-setup)
+
 (global-company-mode t)
+
+(eval-after-load 'company
+  '(progn
+     (define-key company-mode-map [C-tab] 'helm-company)
+     (define-key company-active-map [C-tab] 'helm-company)))

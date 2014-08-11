@@ -15,6 +15,7 @@
     helm
     helm-ag
     helm-ag-r
+    helm-company
     helm-git-files
     helm-git-grep
     helm-gtags
