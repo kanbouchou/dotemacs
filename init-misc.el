@@ -46,3 +46,6 @@
 (fset 'yes-or-no-p 'y-or-n-p) ; y/n instead of yes/no
 
 (require 'generic-x)
+
+(require 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)

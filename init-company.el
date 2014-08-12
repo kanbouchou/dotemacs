@@ -1,29 +1,8 @@
-;; remove company-clang--handle-error from company-clang.el
-;; otherwise it hangs when clang fails to autocomplete
-
 (require 'company)
 
-(defun my-company-cc-mode-setup ()
-  (setq company-clang-arguments
-        (mapcar (lambda (item)(concat "-I" item))
-                (split-string
-                 "
- /usr/include/c++/4.8
- /usr/include/i386-linux-gnu/c++/4.8
- /usr/include/c++/4.8/backward
- /usr/lib/gcc/i686-linux-gnu/4.8/include
- /usr/local/include
- /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
- /usr/include/i386-linux-gnu
- /usr/include
- /usr/lib/llvm-3.4/include
-")))
-  (add-to-list 'company-dabbrev-code-modes 'c++-mode)
-  (setq company-idle-delay 0)
-)
-
-(add-hook 'c-mode-hook 'my-company-cc-mode-setup)
-(add-hook 'c++-mode-hook 'my-company-cc-mode-setup)
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-irony))
+(add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
 
 (global-company-mode t)
 
@@ -31,3 +10,15 @@
   '(progn
      (define-key company-mode-map [C-tab] 'helm-company)
      (define-key company-active-map [C-tab] 'helm-company)))
+
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+
+;; replace the `completion-at-point' and `complete-symbol' bindings in
+;; irony-mode's buffers by irony-mode's function
+;; (defun my-irony-mode-hook ()
+;;   (define-key irony-mode-map [remap completion-at-point]
+;;     'irony-completion-at-point-async)
+;;   (define-key irony-mode-map [remap complete-symbol]
+;;     'irony-completion-at-point-async))
+;; (add-hook 'irony-mode-hook 'my-irony-mode-hook)

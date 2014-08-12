@@ -4,12 +4,11 @@
   '(
     ;; ここに使っているパッケージを書く。
     ag
-    auto-complete
-    auto-complete-clang
     bash-completion
     color-theme
     company
     cmake-mode
+    flycheck
     git-gutter+
     git-gutter-fringe+
     helm
