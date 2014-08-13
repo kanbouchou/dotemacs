@@ -7,6 +7,8 @@
     bash-completion
     color-theme
     company
+    company-c-headers
+    company-irony
     cmake-mode
     flycheck
     git-gutter+
