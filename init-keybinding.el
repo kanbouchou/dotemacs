@@ -31,7 +31,7 @@
 
 ;; git
 (global-set-key [f2]         'magit-status)
-(global-set-key [C-f2]       'global-git-gutter+-mode)
+(global-set-key [C-f2]       'git-gutter+-revert-hunk)
 
 ;; beautifulizer
 (load "/usr/share/emacs/site-lisp/clang-format-3.4/clang-format.el")
@@ -61,8 +61,8 @@
 (global-set-key [S-f10]      'previous-error)
 
 ;; navigation: git
-(global-set-key [f11]        'global-git-gutter+-mode)
-(global-set-key [C-f11]      'git-gutter+-next-hunk)
+(global-set-key [C-f11]      'global-git-gutter+-mode)
+(global-set-key [f11]        'git-gutter+-next-hunk)
 (global-set-key [S-f11]      'git-gutter+-previous-hunk)
 
 ;; navigation: line

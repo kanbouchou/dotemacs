@@ -51,4 +51,4 @@
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "tomato")
 (set-face-background 'modeline-inactive "dim gray")
-(set-face-background 'default "#000020")
+(set-face-background 'default "#000010")
