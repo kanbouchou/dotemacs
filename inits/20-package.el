@@ -23,6 +23,7 @@
     helm-ls-git
     magit
     matlab-mode
+    rainbow-delimiters
     rtags
     smartparens
     volatile-highlights
