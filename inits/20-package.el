@@ -23,6 +23,7 @@
     helm-ls-git
     magit
     matlab-mode
+    rtags
     smartparens
     volatile-highlights
     wgrep-ag
