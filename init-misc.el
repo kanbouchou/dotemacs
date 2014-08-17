@@ -49,3 +49,5 @@
 
 (require 'flycheck)
 (add-hook 'after-init-hook 'global-flycheck-mode)
+
+(global-anzu-mode t)

@@ -4,6 +4,7 @@
   '(
     ;; ここに使っているパッケージを書く。
     ag
+    anzu
     bash-completion
     color-theme
     company
