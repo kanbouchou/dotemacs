@@ -1,3 +1,4 @@
+(require 'company-rtags)
 (when (require 'company)
   (add-to-list 'company-backends 'company-irony)
   (add-to-list 'company-backends 'company-c-headers)
@@ -16,3 +17,9 @@
 
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)
+
+;; rtags
+(add-to-list 'company-backends 'company-rtags)
+(setq company-rtags-begin-after-member-access t)
+(setq rtags-completions-enabled t)
+(rtags-diagnostics)
