@@ -4,7 +4,7 @@
 
 (global-set-key (kbd "M-x")   'helm-M-x)
 (global-set-key (kbd "M-y")   'helm-show-kill-ring)
-(global-set-key (kbd "M-%")   'anzu-query-replace-at-cursor)
+(global-set-key (kbd "M-%")   'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
 (global-set-key (kbd "C-;")  'helm-for-files)
@@ -50,7 +50,7 @@
 (global-set-key [C-f7]       'rtags-location-stack-forward)
 (global-set-key [S-f7]       'rtags-location-stack-reset)
 (global-set-key [f8]         'rtags-find-symbol-at-point)
-(global-set-key [C-f8]       'rtags-find-references-at-point)
+(global-set-key [C-f8]       'rtags-find-all-references-at-point)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
