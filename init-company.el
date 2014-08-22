@@ -1,10 +1,10 @@
-(require 'company-rtags)
 (when (require 'company)
   (add-to-list 'company-backends 'company-irony)
   (add-to-list 'company-backends 'company-c-headers)
   (add-to-list 'company-backends 'company-files)
   (setq company-backends (delete 'company-capf company-backends)) ;; until emacs24.4
   (setq company-idle-delay 0.001)
+  (setq company-async-timeout 3)
   )
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
 
@@ -19,7 +19,8 @@
 (add-hook 'c-mode-hook 'irony-mode)
 
 ;; rtags
-(add-to-list 'company-backends 'company-rtags)
-(setq company-rtags-begin-after-member-access t)
-(setq rtags-completions-enabled t)
-(rtags-diagnostics)
+;; (require 'company-rtags)
+;; (add-to-list 'company-backends 'company-rtags)
+;; (setq company-rtags-begin-after-member-access t)
+;; (setq rtags-completions-enabled t)
+;; (rtags-diagnostics)
