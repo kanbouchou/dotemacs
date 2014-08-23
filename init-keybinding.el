@@ -46,11 +46,11 @@
 (global-set-key [f5]         'helm-imenu)
 
 ;; tags
-(global-set-key [f7]         'rtags-location-stack-back)
+(global-set-key [f7]         'tags-pop-stack)
 (global-set-key [C-f7]       'rtags-location-stack-forward)
-(global-set-key [S-f7]       'rtags-location-stack-reset)
-(global-set-key [f8]         'rtags-find-symbol-at-point)
-(global-set-key [C-f8]       'rtags-find-all-references-at-point)
+(global-set-key [S-f7]       'tags-clear-stack)
+(global-set-key [f8]         'tags-find-symbol-at-point)
+(global-set-key [C-f8]       'tags-find-references-at-point)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
