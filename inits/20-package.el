@@ -13,7 +13,6 @@
     cmake-mode
     eldoc
     c-eldoc
-    flycheck
     git-gutter+
     git-gutter-fringe+
     helm
