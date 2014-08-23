@@ -50,3 +50,6 @@
 (require 'helm-gtags)
 (setq helm-gtags-auto-update t)
 (setq helm-gtags-read-only t)
+
+
+(put 'helm-show-kill-ring 'delete-selection t) ; helm-show-kill-ring with delete selection mode
