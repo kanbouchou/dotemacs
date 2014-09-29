@@ -19,8 +19,8 @@
 (setq helm-for-files-preferred-list
       '(helm-source-buffers-list
         helm-source-bookmarks
-        helm-source-recentf
         helm-source-ls-git
+        helm-source-recentf
         helm-source-find-files
         helm-source-file-cache
         helm-source-files-in-current-dir
