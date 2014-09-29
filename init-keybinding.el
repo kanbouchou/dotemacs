@@ -36,8 +36,8 @@
 (global-set-key [C-f2]       'git-gutter+-revert-hunk)
 
 ;; beautifulizer
-(load "/usr/share/emacs/site-lisp/clang-format-3.4/clang-format.el")
-(global-set-key [f3]         'clang-format-region)
+;; (load "/usr/share/emacs/site-lisp/clang-format-3.4/clang-format.el")
+;; (global-set-key [f3]         'clang-format-region)
 
 ;; align
 (global-set-key [f4]         'align-current)
