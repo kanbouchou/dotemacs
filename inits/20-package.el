@@ -15,6 +15,7 @@
     c-eldoc
     git-gutter+
     git-gutter-fringe+
+    google-this
     helm
     helm-ag
     helm-ag-r
