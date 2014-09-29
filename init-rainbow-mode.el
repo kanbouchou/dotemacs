@@ -8,4 +8,4 @@
 (set-face-foreground 'rainbow-delimiters-depth-6-face "khaki")
 (set-face-foreground 'rainbow-delimiters-depth-7-face "olive drab")
 
-(global-rainbow-delimiters-mode)
+(add-hook 'c-mode-common-hook 'rainbow-delimiters-mode)
