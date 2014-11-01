@@ -17,9 +17,7 @@
 (require 'helm-ls-git)
 ;;; helm for files
 (setq helm-for-files-preferred-list
-      '(helm-source-buffers-list
-        helm-source-bookmarks
-        helm-source-ls-git
+      '(helm-source-ls-git
         helm-source-recentf
         helm-source-find-files
         helm-source-file-cache
