@@ -10,7 +10,7 @@
 (global-set-key (kbd "C-;")  'helm-for-files)
 (global-set-key (kbd "C-:")  'helm-buffers-list)
 (global-set-key (kbd "C-.")  'helm-git-grep-at-point)
-(global-set-key (kbd "C-,")  'ag-project-at-point)
+(global-set-key (kbd "C-,")  'ag-project)
 (global-set-key (kbd "C-o")  'helm-find-files) ; overwrite open-line
 
 (global-set-key (kbd "C-^")  'helm-resume)
