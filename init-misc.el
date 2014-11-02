@@ -48,3 +48,6 @@
 (require 'generic-x)
 
 (global-anzu-mode t)
+
+(setq shell-file-name "bash")
+(setq shell-command-switch "-ic")
