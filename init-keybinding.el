@@ -64,10 +64,12 @@
 (global-set-key [f10]        'next-error)
 (global-set-key [S-f10]      'previous-error)
 
-;; navigation: git
-(global-set-key [C-f11]      'global-git-gutter+-mode)
-(global-set-key [f11]        'git-gutter+-next-hunk)
-(global-set-key [S-f11]      'git-gutter+-previous-hunk)
 
-;; navigation: line
-(global-set-key [f12]        'goto-line)
+;; navigation: rtags diagnostics error
+(global-set-key [f11]        'rtags-next-diag)
+(global-set-key [S-f11]      'rtags-previous-diag)
+
+;; navigation: git
+(global-set-key [C-f12]      'global-git-gutter+-mode)
+(global-set-key [f12]        'git-gutter+-next-hunk)
+(global-set-key [S-f12]      'git-gutter+-previous-hunk)
