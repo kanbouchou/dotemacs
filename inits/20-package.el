@@ -25,6 +25,7 @@
     helm-git-grep
     helm-gtags
     helm-ls-git
+    hiwin
     magit
     matlab-mode
     rainbow-delimiters
