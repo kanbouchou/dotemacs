@@ -1,7 +1,7 @@
 ;;; helm
 (require 'helm-config)
 (setq helm-buffer-max-length 40)
-
+(setq helm-git-grep-candidate-number-limit 1000)
 ;;; helm git fiels
 (require 'helm-git-files)
 (defun my-helm-git-files ()
