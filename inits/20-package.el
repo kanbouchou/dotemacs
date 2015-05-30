@@ -26,6 +26,7 @@
     helm-gtags
     helm-ls-git
     hiwin
+    irony-eldoc
     magit
     matlab-mode
     rainbow-delimiters

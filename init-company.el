@@ -7,6 +7,7 @@
   (setq company-async-timeout 3)
   )
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+(add-hook 'irony-mode-hook 'irony-eldoc)
 
 (global-company-mode t)
 
