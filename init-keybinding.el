@@ -21,8 +21,6 @@
 (global-set-key (kbd "C-\-") 'delete-other-windows)
 
 (global-set-key [C-tab]      'company-complete)
-(require 'ace-jump-mode)
-(global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 
 ;; line navigation
 (global-set-key [M-up]       'beginning-of-buffer)

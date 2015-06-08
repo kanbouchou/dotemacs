@@ -3,7 +3,6 @@
 (defvar installing-package-list
   '(
     ;; ここに使っているパッケージを書く。
-    ace-jump-mode
     ag
     anzu
     bash-completion
