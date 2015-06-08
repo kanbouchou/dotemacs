@@ -22,6 +22,10 @@
 
 (global-set-key [C-tab]      'company-complete)
 
+;; input method selection
+(global-set-key (kbd "<muhenkan>")  (lambda () (interactive) (set-input-method)))
+(global-set-key (kbd "<henkan>")  (lambda () (interactive) (set-input-method 'japanese-mozc)))
+
 ;; line navigation
 (global-set-key [M-up]       'beginning-of-buffer)
 (global-set-key [M-down]     'end-of-buffer)

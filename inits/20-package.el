@@ -28,6 +28,7 @@
     irony-eldoc
     magit
     matlab-mode
+    mozc
     rainbow-delimiters
     rtags
     smartparens
