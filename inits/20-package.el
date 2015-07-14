@@ -12,6 +12,7 @@
     company-irony
     cmake-mode
     eldoc
+    ess
     c-eldoc
     git-gutter+
     git-gutter-fringe+
@@ -24,11 +25,14 @@
     helm-git-grep
     helm-gtags
     helm-ls-git
+    helm-swoop
     hiwin
     irony-eldoc
     magit
+    markdown-mode
     matlab-mode
     mozc
+    polymode
     rainbow-delimiters
     rtags
     smartparens
