@@ -16,7 +16,7 @@
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
 
-
+(load-file "~/.emacs.d/init-diminish.el")
 (load-file "~/.emacs.d/init-ag.el")
 (load-file "~/.emacs.d/init-tags.el")
 (load-file "~/.emacs.d/init-helm.el")

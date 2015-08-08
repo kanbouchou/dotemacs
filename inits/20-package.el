@@ -6,14 +6,15 @@
     ag
     anzu
     auto-highlight-symbol
+    c-eldoc
     color-theme
     company
     company-c-headers
     company-irony
     cmake-mode
+    diminish
     eldoc
     ess
-    c-eldoc
     git-gutter+
     git-gutter-fringe+
     google-this
