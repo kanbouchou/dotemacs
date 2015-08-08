@@ -33,7 +33,6 @@
     matlab-mode
     mozc
     polymode
-    rainbow-delimiters
     rtags
     smartparens
     volatile-highlights
