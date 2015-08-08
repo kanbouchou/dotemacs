@@ -5,7 +5,7 @@
     ;; ここに使っているパッケージを書く。
     ag
     anzu
-    bash-completion
+    auto-highlight-symbol
     color-theme
     company
     company-c-headers

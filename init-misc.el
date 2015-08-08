@@ -49,6 +49,6 @@
 
 (global-anzu-mode t)
 
-;; bashにすると重かった
-;; (setq shell-file-name "bash")
-;; (setq shell-command-switch "-ic")
+;; auto-highlight
+(require 'auto-highlight-symbol)
+(global-auto-highlight-symbol-mode t)
