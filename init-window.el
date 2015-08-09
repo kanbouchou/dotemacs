@@ -27,14 +27,17 @@
     ))
 (setq frame-background-mode 'dark)
 
-;; @todo window-total-width doesn't give you the frame size as I misunderstood
 (defun other-window-or-split ()
   (interactive)
-  (if (>= (window-body-width) (/ (frame-width) 2))
-      (split-window-horizontally)
-    (if (>= (window-body-height) (/ (frame-height) 2))
-        (split-window-vertically)
-      (other-window 1)))
+  (setq threshold 800)
+  (setq width (window-body-width nil t))
+  (setq height (window-body-height nil t))
+  (setq max_width_height (max width height))
+  (if (>= max_width_height threshold)
+      (if (>= width height)
+          (split-window-horizontally)
+        (split-window-vertically))
+    (other-window 1))
   )
 
 
