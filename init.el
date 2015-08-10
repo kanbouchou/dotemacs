@@ -32,4 +32,4 @@
 ;(load-file "~/.emacs.d/init-auto-complete.el")
 (load-file "~/.emacs.d/init-company.el")
 (load-file "~/.emacs.d/init-wgrep-ag.el")
-;(load-file "~/.emacs.d/init-eldoc.el")
+(load-file "~/.emacs.d/init-fonts.el")
