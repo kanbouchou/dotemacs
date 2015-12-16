@@ -36,6 +36,7 @@
     polymode
     rtags
     smartparens
+    smex
     volatile-highlights
     wgrep-ag
     yaml-mode

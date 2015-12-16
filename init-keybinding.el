@@ -2,7 +2,7 @@
 ;(global-unset-key (kbd "C-\\")) ; toggle-input-method
 (global-unset-key (kbd "C-z")) ; iconify-or-deiconify-frame
 
-(global-set-key (kbd "M-x")   'helm-M-x)
+(global-set-key (kbd "M-x")   'smex)
 (global-set-key (kbd "M-y")   'helm-show-kill-ring)
 (global-set-key (kbd "M-%")   'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
