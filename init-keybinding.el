@@ -69,7 +69,3 @@
 ;; navigation: rtags diagnostics error
 (global-set-key [f11]    'rtags-next-diag)
 (global-set-key [S-f11]  'rtags-previous-diag)
-
-(require                 'expand-region)
-(global-set-key [f12]    'er/expand-region)
-(global-set-key [S-f12]  'er/contract-region)
