@@ -10,10 +10,6 @@
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
 
-;;; use alias and environment variables from bash
-(require 'bash-completion)
-(bash-completion-setup)
-
 (setq save-place t)	    ; 前回編集していた場所を記憶
 (recentf-mode t)	    ; 最近使ったファイル
 (setq-default indent-tabs-mode nil)	; インデントに空白を使う
