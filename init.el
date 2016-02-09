@@ -1,21 +1,16 @@
-(require 'package)
-(setq package-user-dir "~/.emacs.d/elpa/")
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
+(when load-file-name
+  (setq user-emacs-directory (file-name-directory load-file-name)))
 
-;; ~/.emacs.d/site-lisp 以下全部読み込み
-(let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
-  (add-to-list 'load-path default-directory)
-  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
-      (normal-top-level-add-subdirs-to-load-path)))
+(add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+(add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
 
-
-
-(require 'init-loader)
-(setq init-loader-show-log-after-init nil)
-(init-loader-load "~/.emacs.d/inits")
-
+(load-file "~/.emacs.d/init-el-get.el")
 (load-file "~/.emacs.d/init-diminish.el")
 (load-file "~/.emacs.d/init-ag.el")
 (load-file "~/.emacs.d/init-tags.el")
