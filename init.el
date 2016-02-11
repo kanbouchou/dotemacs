@@ -1,17 +1,22 @@
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
 
-(add-to-list 'load-path (locate-user-emacs-file "~/.emacs.d/el-get/el-get"))
+;; el-get
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(unless (require 'el-get nil 'noerror)
+  (require 'package)
+  (add-to-list 'package-archives
+               '("melpa" . "http://melpa.org/packages/"))
+  (package-refresh-contents)
+  (package-initialize)
+  (package-install 'el-get)
+  (require 'el-get))
+
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
+
 (add-to-list 'custom-theme-load-path
              (file-name-as-directory "~/.emacs.d/el-get/replace-colorthemes"))
-
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
-    (goto-char (point-max))
-    (eval-print-last-sexp)))
-(add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
 
 (load-file "~/.emacs.d/init-el-get.el")
 (load-file "~/.emacs.d/init-diminish.el")
