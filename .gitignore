@@ -1,6 +1,8 @@
 auto-save-list/*
 elpa/*
+el-get/*
 session.*
 *~
 history
 ac-comphist.dat
+smex-items
