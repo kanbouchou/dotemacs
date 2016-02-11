@@ -1,5 +1,7 @@
 (setq el-get-lock-package-versions
-      '((magit :checksum "f17fb6a9962002cc2e09be01d2618d502b018965")
+      '((replace-colorthemes :checksum "0a804c611da57b2d7c02c95f26eb8a7fc305f159")
+        (matlab-mode :checksum "91bfcb536e3768ebb78579a6e1bcd83db66e0e7f")
+        (magit :checksum "f17fb6a9962002cc2e09be01d2618d502b018965")
         (wgrep :checksum "7ef26c51feaef8a5ec0929737130ab8ba326983c")
         (color-theme :checksum "15136c6411015e38f4917430ab6bb99f7b9725e2")
         (yaml-mode :checksum "49668547e1891cb68d2bbbc650acbfa208012f2b")

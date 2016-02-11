@@ -16,15 +16,9 @@
           '(lambda ()
              (ansi-color-apply-on-region (point-min) (point-max))))
 
-;; color-theme
-(when (require 'color-theme nil t)
-  (color-theme-initialize)
-  (if (window-system)
-    ;(color-theme-robin-hood)
-    (color-theme-clarity)
-    ;(color-theme-greiner)
-    (color-theme-emacs-nw)
-    ))
+;; theme
+(load-theme 'clarity t)
+(enable-theme 'clarity)
 (setq frame-background-mode 'dark)
 
 (defun other-window-or-split ()
@@ -46,10 +40,6 @@
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "#3e4446")
 (set-face-foreground 'highlight nil)
-
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-dark-laptop)
 
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "tomato")
