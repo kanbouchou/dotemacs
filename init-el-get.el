@@ -5,7 +5,6 @@
 (el-get-bundle anzu)
 (el-get-bundle auto-highlight-symbol)
 (el-get-bundle c-eldoc)
-(el-get-bundle company)
 (el-get-bundle company-c-headers)
 (el-get-bundle company-irony)
 (el-get-bundle cmake-mode)
