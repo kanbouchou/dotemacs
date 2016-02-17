@@ -65,3 +65,6 @@
 ;; navigation: rtags diagnostics error
 (global-set-key [f11]    'rtags-next-diag)
 (global-set-key [S-f11]  'rtags-previous-diag)
+
+;; google-this
+(global-set-key (kbd "C-x C-g") 'google-this)
