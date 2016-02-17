@@ -28,6 +28,8 @@
 ;; navigation inside window
 (global-set-key [M-up]    'goto-last-change)
 (global-set-key [M-down]  'goto-last-change-reverse)
+(global-set-key (kbd "M-n") 'ahs-forward)
+(global-set-key (kbd "M-p") 'ahs-backward)
 
 ;; git-gutter
 (global-set-key [f1]     'git-gutter+-next-hunk)
