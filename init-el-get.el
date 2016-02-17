@@ -1,5 +1,16 @@
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(unless (require 'el-get nil 'noerror)
+  (require 'package)
+  (add-to-list 'package-archives
+               '("melpa" . "http://melpa.org/packages/"))
+  (package-refresh-contents)
+  (package-initialize)
+  (package-install 'el-get)
+  (require 'el-get))
+
 (el-get-bundle tarao/el-get-lock)
-(el-get-lock)
+(unless (require 'el-get-lock nil 'noerror)
+  (el-get-lock))
 
 (el-get-bundle ag)
 (el-get-bundle anzu)
@@ -10,6 +21,9 @@
 (el-get-bundle cmake-mode)
 (el-get-bundle diminish)
 (el-get-bundle emacs-jp/replace-colorthemes)
+(add-to-list 'custom-theme-load-path
+             (file-name-as-directory "~/.emacs.d/el-get/replace-colorthemes"))
+
 (el-get-bundle elpa:ess)
 (el-get-bundle elpa:git-commit)
 (el-get-bundle git-gutter+)
