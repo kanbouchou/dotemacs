@@ -4,6 +4,8 @@
 
 (global-set-key (kbd "M-x")   'smex)
 (global-set-key (kbd "M-y")   'helm-show-kill-ring)
+
+;; anzu
 (global-set-key (kbd "M-%")   'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
@@ -16,22 +18,16 @@
 (global-set-key (kbd "C-]")  'helm-resume)
 (global-set-key (kbd "C-z")  'helm-occur-from-isearch) ;
 
-(global-set-key (kbd "C-t") 'other-window); overwrite transpose-chars
-(global-set-key (kbd "C-\-") 'ace-jump-word-mode)
-
 ;; window operation
+(global-set-key (kbd "C-t")  'other-window); overwrite transpose-chars
 (global-set-key (kbd "C-\+") 'other-window-or-split)
 (global-set-key (kbd "C-\-") 'delete-other-windows)
 
 (global-set-key [C-tab]      'company-complete)
 
-;; input method selection
-(global-set-key (kbd "<muhenkan>")  (lambda () (interactive) (set-input-method)))
-(global-set-key (kbd "<henkan>")  (lambda () (interactive) (set-input-method 'japanese-mozc)))
-
-;; navigation
-(global-set-key [M-up]   'beginning-of-buffer)
-(global-set-key [M-down] 'end-of-buffer)
+;; navigation inside window
+(global-set-key [M-up]    'goto-last-change)
+(global-set-key [M-down]  'goto-last-change-reverse)
 
 ;; git-gutter
 (global-set-key [f1]     'git-gutter+-next-hunk)

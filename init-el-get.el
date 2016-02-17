@@ -28,6 +28,7 @@
 (el-get-bundle git-gutter+)
 (el-get-bundle git-gutter-fringe+)
 (el-get-bundle google-this)
+(el-get-bundle goto-chg)
 (el-get-bundle helm)
 (el-get-bundle helm-ag)
 (el-get-bundle helm-ag-r)
