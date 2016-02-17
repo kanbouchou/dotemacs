@@ -15,6 +15,7 @@
 (el-get-bundle ag)
 (el-get-bundle anzu)
 (el-get-bundle c-eldoc)
+(el-get-bundle col-highlight)
 (el-get-bundle company-c-headers)
 (el-get-bundle company-irony)
 (el-get-bundle cmake-mode)

@@ -1,4 +1,5 @@
 (setq el-get-lock-package-versions
-      '((highlight-symbol :checksum "7a789c779648c55b16e43278e51be5898c121b3a")))
+      '((col-highlight :checksum "fe6028f6a9fca68e1c49a1b67cad66b4313dee41")
+        (vline :checksum "c4f5ea2731d8b89e24eec5e9be98e2652b54bdbc")))
 (setq el-get-lock-locked-packages 'nil)
 (setq el-get-lock-unlocked-packages 'nil)
