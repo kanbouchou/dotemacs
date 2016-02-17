@@ -14,7 +14,6 @@
 
 (el-get-bundle ag)
 (el-get-bundle anzu)
-(el-get-bundle auto-highlight-symbol)
 (el-get-bundle c-eldoc)
 (el-get-bundle company-c-headers)
 (el-get-bundle company-irony)
@@ -38,6 +37,7 @@
 (el-get-bundle helm-gtags)
 (el-get-bundle helm-ls-git)
 (el-get-bundle helm-swoop)
+(el-get-bundle highlight-symbol)
 (el-get-bundle hiwin)
 (el-get-bundle irony-eldoc)
 (el-get-bundle magit)

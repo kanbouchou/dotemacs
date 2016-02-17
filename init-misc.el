@@ -45,6 +45,7 @@
 
 (global-anzu-mode t)
 
-;; auto-highlight
-(require 'auto-highlight-symbol)
+;; highlight
+(require 'highlight-symbol)
+(setq highlight-symbol-idle-delay 0)
 (global-auto-highlight-symbol-mode t)
