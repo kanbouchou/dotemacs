@@ -9,6 +9,7 @@
 (global-set-key (kbd "M-%")   'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
+(global-set-key (kbd "C-?")  'helm-apropos)
 (global-set-key (kbd "C-;")  'helm-for-files)
 (global-set-key (kbd "C-'")  'helm-mini)
 (global-set-key (kbd "C-.")  'helm-git-grep-at-point)
