@@ -7,9 +7,6 @@
 ;;; hooks
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(require 'volatile-highlights)
-(volatile-highlights-mode t)
-
 (setq save-place t)	    ; 前回編集していた場所を記憶
 (recentf-mode t)	    ; 最近使ったファイル
 (setq-default indent-tabs-mode nil)	; インデントに空白を使う
@@ -48,4 +45,3 @@
 ;; highlight
 (require 'highlight-symbol)
 (setq highlight-symbol-idle-delay 0)
-(global-auto-highlight-symbol-mode t)

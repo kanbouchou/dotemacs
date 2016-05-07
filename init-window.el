@@ -60,6 +60,3 @@ Letters do not insert themselves; instead, they are commands.
   (setq tabulated-list-padding 1)
   (setq tabulated-list-sort-key (cons "Status" nil))
   (tabulated-list-init-header))
-
-(hiwin-activate)
-(set-face-background 'hiwin-face "gray20")

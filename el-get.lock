@@ -1,5 +1,9 @@
 (setq el-get-lock-package-versions
-      '((col-highlight :checksum "fe6028f6a9fca68e1c49a1b67cad66b4313dee41")
-        (vline :checksum "c4f5ea2731d8b89e24eec5e9be98e2652b54bdbc")))
+      '((company-irony :checksum "c51b3997f0a847d971917a4401277bf283250021")
+        (irony-mode :checksum "8d6562a5d75ba65c6fbeff50d2eb9127d45dffa9")
+        (company-c-headers :checksum "0450f429bd5745e91e984651c932264481953142")
+        (c-eldoc :checksum "3baef9b6300370bd8db3ea7636084afcdebc6e85")
+        (ag :checksum "29d40fdaa4f605e9a6bf689050f0767f3ba22307")
+        (s :checksum "981e0c7d19d4575d073b3a6bfb90526eeaf9384a")))
 (setq el-get-lock-locked-packages 'nil)
 (setq el-get-lock-unlocked-packages 'nil)

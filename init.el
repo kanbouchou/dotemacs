@@ -1,8 +1,12 @@
-(when load-file-name
-  (setq user-emacs-directory (file-name-directory load-file-name)))
+(unless load-file-name
+  (cd (getenv "HOME")))
 
-;; el-get
-(load-file "~/.emacs.d/init-el-get.el")
+(require 'cl-lib)
+
+(when load-file-name
+  (setq-default user-emacs-directory (file-name-directory load-file-name)))
+
+(load (concat user-emacs-directory "init-el-get.el"))
 
 ;; set keybind asap
 (load-file "~/.emacs.d/init-keybinding.el")
