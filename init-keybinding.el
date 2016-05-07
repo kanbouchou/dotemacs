@@ -31,6 +31,7 @@
 (global-set-key [M-down]  'goto-last-change-reverse)
 (global-set-key (kbd "M-n") 'ahs-forward)
 (global-set-key (kbd "M-p") 'ahs-backward)
+(global-set-key (kbd "M-,") 'avy-goto-char-2)
 
 ;; git-gutter
 (global-set-key [f1]     'git-gutter+-next-hunk)
