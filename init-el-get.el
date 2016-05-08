@@ -49,7 +49,6 @@
 (el-get-bundle helm-ag-r)
 (el-get-bundle helm-company)
 (el-get-bundle helm-git-files)
-(el-get-bundle helm-git-grep)
 (el-get-bundle helm-ls-git)
 (el-get-bundle helm-swoop)
 

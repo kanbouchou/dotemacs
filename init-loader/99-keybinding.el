@@ -12,7 +12,8 @@
 (global-set-key (kbd "C-?")  'helm-apropos)
 (global-set-key (kbd "C-;")  'helm-for-files)
 (global-set-key (kbd "C-'")  'helm-mini)
-(global-set-key (kbd "C-.")  'helm-git-grep-at-point)
+(global-set-key (kbd "C-.")  'helm-do-ag-project-root)
+(global-set-key (kbd "C->")  'helm-ag-project-root)
 (global-set-key (kbd "C-,")  'helm-multi-swoop-all)
 (global-set-key (kbd "C-o")  'helm-find-files) ; overwrite open-line
 (global-set-key (kbd "C-h")  'delete-backward-char); over
