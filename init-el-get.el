@@ -9,6 +9,10 @@
 (custom-set-variables
  '(el-get-verbose t))
 
+;; lock package version
+(el-get-bundle tarao/el-get-lock)
+(el-get-lock)
+
 ;; setup
 (el-get-bundle emacs-jp/init-loader)
 (el-get-bundle purcell/exec-path-from-shell)
