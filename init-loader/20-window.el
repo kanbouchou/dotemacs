@@ -17,6 +17,7 @@
              (ansi-color-apply-on-region (point-min) (point-max))))
 
 ;; theme
+(require 'clarity-theme)
 (load-theme 'clarity t)
 (enable-theme 'clarity)
 (setq frame-background-mode 'dark)
