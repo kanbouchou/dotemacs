@@ -44,9 +44,6 @@
 ;; Pair
 (el-get-bundle smartparens)
 
-;; company
-(el-get-bundle helm-company)
-
 ;; helm
 (el-get-bundle helm)
 (el-get-bundle helm-ag)

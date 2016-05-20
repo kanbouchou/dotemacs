@@ -1,5 +1,9 @@
 (setq el-get-lock-package-versions
-      '((company-irony :checksum "c51b3997f0a847d971917a4401277bf283250021")
+      '((jedi :checksum "aa2cff0b4aa9fbae23c054f185769d7661666c97")
+        (auto-complete :checksum "08af29236e686c876ac7a45670562f3487ff02e0")
+        (popup :checksum "8eee9c57288d12073d331a9eb4c172358d268455")
+        (fuzzy :checksum "534d723ad2e06322ff8d9bd0ba4863d243f698e7")
+        (company-irony :checksum "c51b3997f0a847d971917a4401277bf283250021")
         (irony-mode :checksum "8d6562a5d75ba65c6fbeff50d2eb9127d45dffa9")
         (company-c-headers :checksum "0450f429bd5745e91e984651c932264481953142")
         (c-eldoc :checksum "3baef9b6300370bd8db3ea7636084afcdebc6e85")
