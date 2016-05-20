@@ -63,6 +63,7 @@
 ;; Python
 (el-get-bundle tkf/emacs-python-environment)
 (el-get-bundle elpa:jedi-core)
+(el-get-bundle jedi)
 (el-get-bundle syohex/emacs-company-jedi :name company-jedi)
 
 ;; matlab

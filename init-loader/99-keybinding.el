@@ -30,8 +30,6 @@
 ;; navigation inside window
 (global-set-key [M-up]    'goto-last-change)
 (global-set-key [M-down]  'goto-last-change-reverse)
-(global-set-key (kbd "M-n") 'ahs-forward)
-(global-set-key (kbd "M-p") 'ahs-backward)
 (global-set-key (kbd "M-,") 'avy-goto-char-2)
 
 ;; git-gutter
@@ -51,11 +49,20 @@
 (global-set-key [f5]     'helm-imenu)
 
 ;; tags
-(global-set-key [f7]     'tags-pop-stack)
-(global-set-key [C-f7]   'rtags-location-stack-forward)
-(global-set-key [S-f7]   'tags-clear-stack)
-(global-set-key [f8]     'tags-find-symbol-at-point)
-(global-set-key [C-f8]   'tags-find-references-at-point)
+(add-hook 'python-mode-hook
+          '(lambda()
+             (local-set-key [f7] 'jedi:goto-definition)
+             (local-set-key [C-f7] 'jedi:goto-definition-pop-marker)
+             (local-set-key [f8] 'jedi:show-doc)
+             ))
+
+(defun rtags-keybinds()
+  (local-set-key [C-f7]     'tags-pop-stack)
+  (local-set-key [f7]     'tags-find-symbol-at-point)
+  (local-set-key [f8]   'tags-find-references-at-point)
+  )
+(add-hook 'c-mode-hook   'rtags-keybinds)
+(add-hook 'c++-mode-hook 'rtags-keybinds)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
