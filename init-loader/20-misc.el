@@ -30,6 +30,8 @@
 
 (require 'git-gutter-fringe+)
 (global-git-gutter+-mode t)
+(setq git-gutter+-diff-options '("--ignore-space-at-eol"))
+
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
