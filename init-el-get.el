@@ -76,6 +76,7 @@
 ;; Markup language
 (el-get-bundle markdown-mode)
 (el-get-bundle yoshiki/yaml-mode)
+(el-get-bundle cataska/qml-mode)
 
 ;; VCS
 (el-get-bundle magit)

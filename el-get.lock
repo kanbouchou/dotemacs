@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((jedi :checksum "aa2cff0b4aa9fbae23c054f185769d7661666c97")
+      '((qml-mode :checksum "7a437b964b3037b191fc32ea01f3a1d367202b46")
+        (jedi :checksum "aa2cff0b4aa9fbae23c054f185769d7661666c97")
         (auto-complete :checksum "08af29236e686c876ac7a45670562f3487ff02e0")
         (popup :checksum "8eee9c57288d12073d331a9eb4c172358d268455")
         (fuzzy :checksum "534d723ad2e06322ff8d9bd0ba4863d243f698e7")
