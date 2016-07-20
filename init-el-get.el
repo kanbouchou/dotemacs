@@ -21,6 +21,7 @@
 (el-get-bundle emacs-jp/replace-colorthemes
   (add-to-list 'custom-theme-load-path default-directory))
 (el-get-bundle diminish)
+(el-get-bundle Fanael/rainbow-delimiters)
 
 ;; highlighting
 (el-get-bundle col-highlight)
