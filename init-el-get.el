@@ -55,7 +55,7 @@
 (el-get-bundle helm-swoop)
 
 ;; tag
-(el-get-bundle rtags)
+;; (el-get-bundle rtags)
 (el-get-bundle helm-gtags)
 
 ;; snippet
