@@ -49,6 +49,7 @@
 (el-get-bundle helm)
 (el-get-bundle helm-ag)
 (el-get-bundle helm-ag-r)
+(el-get-bundle helm-bm)
 (el-get-bundle helm-company)
 (el-get-bundle helm-git-files)
 (el-get-bundle helm-ls-git)

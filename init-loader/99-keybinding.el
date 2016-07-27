@@ -74,9 +74,11 @@
 (global-set-key [f10]    'next-error)
 (global-set-key [S-f10]  'previous-error)
 
-;; navigation: rtags diagnostics error
-(global-set-key [f11]    'rtags-next-diag)
-(global-set-key [S-f11]  'rtags-previous-diag)
+;; bookmark
+(global-set-key [f11]    'bm-toggle)
+(global-set-key [S-f11]  'helm-bm)
+(global-set-key [f12]    'bm-next)
+(global-set-key [S-f12]  'bm-previous)
 
 ;; google-this
 (global-set-key (kbd "C-x C-g") 'google-this)
