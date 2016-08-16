@@ -5,7 +5,7 @@
 (setq recentf-max-saved-items 10000) ;;; 最近開いたファイルを保存する数を増やす
 
 ;;; hooks
-;;; (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (setq save-place t)	    ; 前回編集していた場所を記憶
 (recentf-mode t)	    ; 最近使ったファイル

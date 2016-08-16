@@ -48,7 +48,7 @@
 ;; helm
 (el-get-bundle helm)
 (el-get-bundle helm-ag)
-(el-get-bundle bm)
+;(el-get-bundle bm)
 (el-get-bundle helm-bm)
 (el-get-bundle helm-company)
 (el-get-bundle helm-git-files)
@@ -60,7 +60,7 @@
 (el-get-bundle helm-gtags)
 
 ;; snippet
-(el-get-bundle yasnippet)
+;;(el-get-bundle yasnippet)
 
 ;; Python
 (el-get-bundle tkf/emacs-python-environment)
@@ -89,7 +89,7 @@
 (el-get-bundle smex)
 
 ;; snippet
-(el-get-bundle emacs-jp/helm-c-yasnippet)
+;;(el-get-bundle emacs-jp/helm-c-yasnippet)
 
 ;; Japanese
 (el-get-bundle mozc)

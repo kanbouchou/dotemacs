@@ -5,3 +5,4 @@
 (eval-after-load "smartparens" '(diminish 'smartparens-mode))
 (eval-after-load "volatile-highlights" '(diminish 'volatile-highlights-mode))
 (eval-after-load "highlight-symbol" '(diminish 'highlight-symbol-mode))
+(eval-after-load "ARev" '(diminish 'auto-revert-mode))

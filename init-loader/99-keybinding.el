@@ -19,7 +19,7 @@
 (global-set-key (kbd "C-.")  'helm-do-ag-project-root)
 (global-set-key (kbd "C->")  'helm-ag-project-root)
 (global-set-key (kbd "C-,")  'helm-multi-swoop-all)
-(global-set-key (kbd "C-o")  'helm-find-files) ; overwrite open-line
+(global-set-key (kbd "C-o")  'other-frame) ; overwrite open-line
 (global-set-key (kbd "C-h")  'delete-backward-char); over
 (global-set-key (kbd "C-]")  'helm-resume)
 (global-set-key (kbd "C-z")  'helm-occur-from-isearch) ;
@@ -53,17 +53,18 @@
 (global-set-key [f5]     'helm-imenu)
 
 ;; tags
+(require 'jedi)
 (add-hook 'python-mode-hook
           '(lambda()
-             (local-set-key [f7] 'jedi:goto-definition)
-             (local-set-key [C-f7] 'jedi:goto-definition-pop-marker)
-             (local-set-key [f8] 'jedi:show-doc)
+             (local-set-key [f8] 'jedi:goto-definition)
+             (local-set-key [C-f8] 'jedi:goto-definition-pop-marker)
+             (local-set-key [f7] 'jedi:show-doc)
              ))
 
 (defun rtags-keybinds()
-  (local-set-key [C-f7]     'tags-pop-stack)
-  (local-set-key [f7]     'tags-find-symbol-at-point)
-  (local-set-key [f8]   'tags-find-references-at-point)
+  (local-set-key [C-f8]     'tags-pop-stack)
+  (local-set-key [f8]     'tags-find-symbol-at-point)
+  (local-set-key [f7]   'tags-find-references-at-point)
   )
 (add-hook 'c-mode-hook   'rtags-keybinds)
 (add-hook 'c++-mode-hook 'rtags-keybinds)
