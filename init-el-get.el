@@ -87,3 +87,10 @@
 
 ;; M-x
 (el-get-bundle smex)
+
+;; snippet
+(el-get-bundle emacs-jp/helm-c-yasnippet)
+
+;; Japanese
+(el-get-bundle mozc)
+

@@ -1,6 +1,10 @@
 ;; unbind
-;(global-unset-key (kbd "C-\\")) ; toggle-input-method
 (global-unset-key (kbd "C-z")) ; iconify-or-deiconify-frame
+
+;; japanese input
+(global-unset-key (kbd "C-\\")) ; toggle-input-method
+(global-set-key (kbd "C-S-SPC") 'toggle-input-method)
+
 
 (global-set-key (kbd "M-x")   'smex)
 (global-set-key (kbd "M-y")   'helm-show-kill-ring)
