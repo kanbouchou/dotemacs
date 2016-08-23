@@ -44,6 +44,9 @@
 
 (global-anzu-mode t)
 
+;; no alarm bells
+(setq ring-bell-function 'ignore)
+
 ;; highlight
 (require 'highlight-symbol)
 (setq highlight-symbol-idle-delay 0)
