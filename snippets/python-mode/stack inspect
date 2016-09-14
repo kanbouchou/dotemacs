@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: stack inspect
+# key: stack
+# --
+import inspect; inspect.stack()
