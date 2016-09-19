@@ -89,8 +89,10 @@
 (el-get-bundle smex)
 
 ;; snippet
-;;(el-get-bundle emacs-jp/helm-c-yasnippet)
+(el-get-bundle emacs-jp/helm-c-yasnippet)
 
 ;; Japanese
 (el-get-bundle mozc)
 
+;; misc
+(el-get-bundle open-junk-file)
