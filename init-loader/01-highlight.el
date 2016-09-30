@@ -13,8 +13,9 @@
 (require 'saveplace)
 (setq-default save-place t)
 
-;;; ウィンドウの上部に現在の関数名を表示
-(which-function-mode 1)
+;;; which-function-modeを大きなpythonファイルで使うと重くなる
+;;; https://github.com/bbatsov/prelude/issues/703
+(which-function-mode 0)
 
 ;;; spelling check
 ;(setq-default flyspell-mode t)
