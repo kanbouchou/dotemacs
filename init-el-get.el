@@ -81,7 +81,8 @@
 (el-get-bundle cataska/qml-mode)
 
 ;; VCS
-(el-get-bundle magit)
+(el-get-bundle magit/magit)
+(el-get-bundle git-commit)
 (el-get-bundle git-gutter+)
 (el-get-bundle git-gutter-fringe+)
 
