@@ -82,9 +82,7 @@
 
 ;; VCS
 (el-get-bundle magit/magit)
-(el-get-bundle git-commit)
-(el-get-bundle git-gutter+)
-(el-get-bundle git-gutter-fringe+)
+(el-get-bundle syohex/emacs-git-gutter :name git-gutter)
 
 ;; M-x
 (el-get-bundle smex)

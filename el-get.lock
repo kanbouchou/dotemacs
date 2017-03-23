@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")
+      '((git-gutter :checksum "00c05264af046b5ce248e5b0bc42f117d9c27a09")
+        (el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")
         (open-junk-file :checksum "f87b93ec26e92dc747da43499d0cbf5ab70fd8c2")
         (helm-c-yasnippet :checksum "65ca732b510bfc31636708aebcfe4d2d845b59b0")
         (yasnippet :checksum "cddb8260a0d89cc05577742f0f06938f2317de26")

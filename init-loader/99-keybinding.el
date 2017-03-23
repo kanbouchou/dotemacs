@@ -37,10 +37,10 @@
 (global-set-key (kbd "M-,") 'avy-goto-char-2)
 
 ;; git-gutter
-(global-set-key [f1]     'git-gutter+-next-hunk)
-(global-set-key [S-f1]   'git-gutter+-previous-hunk)
-(global-set-key [f2]     'git-gutter+-show-hunk)
-(global-set-key [C-f2]   'git-gutter+-revert-hunk)
+(global-set-key [f1]     'git-gutter:next-hunk)
+(global-set-key [S-f1]   'git-gutter:previous-hunk)
+(global-set-key [f2]     'git-gutter:popup-hunk)
+(global-set-key [C-f2]   'git-gutter:revert-hunk)
 
 ;; magit
 (global-set-key [f3]     'magit-status)
