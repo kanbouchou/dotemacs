@@ -52,3 +52,7 @@
 ;; highlight
 (require 'highlight-symbol)
 (setq highlight-symbol-idle-delay 0)
+
+
+;; qml-mode is not activated by deafult
+(add-to-list 'auto-mode-alist '("\\.qml\\'" . qml-mode))
