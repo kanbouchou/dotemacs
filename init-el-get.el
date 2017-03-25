@@ -60,7 +60,7 @@
 (el-get-bundle helm-gtags)
 
 ;; snippet
-;;(el-get-bundle yasnippet)
+(el-get-bundle yasnippet)
 
 ;; Python
 (el-get-bundle tkf/emacs-python-environment)
