@@ -28,9 +28,11 @@
 
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
 
-(require 'git-gutter-fringe+)
-(global-git-gutter+-mode t)
-(setq git-gutter+-diff-options '("--ignore-space-at-eol"))
+(global-git-gutter-mode t)
+(require 'git-gutter-fringe)
+(set-face-foreground 'git-gutter-fr:modified "yellow")
+(set-face-foreground 'git-gutter-fr:added    "blue")
+(set-face-foreground 'git-gutter-fr:deleted  "white")
 
 
 (require 'smartparens-config)

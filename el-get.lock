@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((git-gutter :checksum "00c05264af046b5ce248e5b0bc42f117d9c27a09")
+      '((git-gutter-fringe :checksum "16226caab44174301f1659f7bf8cc67a76153445")
+        (git-gutter :checksum "00c05264af046b5ce248e5b0bc42f117d9c27a09")
         (el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")
         (open-junk-file :checksum "f87b93ec26e92dc747da43499d0cbf5ab70fd8c2")
         (helm-c-yasnippet :checksum "65ca732b510bfc31636708aebcfe4d2d845b59b0")
@@ -8,7 +9,7 @@
         (git-gutter-fringe+ :checksum "7a2f49d2455a3a872e90e5f7dd4e6b27f1d96cfc")
         (fringe-helper :checksum "ef4a9c023bae18ec1ddd7265f1f2d6d2e775efdd")
         (git-gutter+ :checksum "b7726997806d9a2da9fe84ff00ecf21d62b6f975")
-        (magit :checksum "bd926105ff6d371618940b7aaf91a6100ea9a325")
+        (magit :checksum "5333ac7942bfe4da5ba74dd973461cdcbbc16f5a")
         (with-editor :checksum "8ae3c7aed92842f5988671c1b3350c65c58857e0")
         (emacs-async :checksum "666066d30a420d86801d8380f5991f2b82471107")
         (yaml-mode :checksum "1c3ade410fb0bf5b6f2140b099f0ef96836ee74e")
