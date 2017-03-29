@@ -41,6 +41,7 @@
 ;; moving cursor
 (el-get-bundle goto-chg)
 (el-get-bundle abo-abo/avy)
+(el-get-bundle smooth-scroll)
 
 ;; Pair
 (el-get-bundle smartparens)

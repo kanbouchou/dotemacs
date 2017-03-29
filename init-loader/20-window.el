@@ -47,6 +47,8 @@
 (set-face-background 'modeline-inactive "dim gray")
 (set-face-background 'default "#000010")
 
+;; smoothly scroll, easier for the eyes
+(smooth-scroll-mode t)
 
 ;;package-listのformat
 (define-derived-mode package-menu-mode tabulated-list-mode "Package Menu"
