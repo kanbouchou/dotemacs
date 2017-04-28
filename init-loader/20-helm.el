@@ -37,3 +37,6 @@
 
 
 (put 'helm-show-kill-ring 'delete-selection t) ; helm-show-kill-ring with delete selection mode
+
+;;; don't use helm for these commands
+(add-to-list 'helm-completing-read-handlers-alist '(find-file-read-only . nil))
