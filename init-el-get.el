@@ -41,7 +41,6 @@
 ;; moving cursor
 (el-get-bundle goto-chg)
 (el-get-bundle abo-abo/avy)
-(el-get-bundle smooth-scroll)
 
 ;; Pair
 (el-get-bundle smartparens)
@@ -49,7 +48,7 @@
 ;; helm
 (el-get-bundle helm)
 (el-get-bundle helm-ag)
-;(el-get-bundle bm)
+(el-get-bundle bm)
 (el-get-bundle helm-bm)
 (el-get-bundle helm-company)
 (el-get-bundle helm-git-files)
