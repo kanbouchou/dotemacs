@@ -6,4 +6,5 @@
 (eval-after-load "volatile-highlights" '(diminish 'volatile-highlights-mode))
 (eval-after-load "highlight-symbol" '(diminish 'highlight-symbol-mode))
 (eval-after-load "autorevert" '(diminish 'auto-revert-mode))
+(eval-after-load "abbrev" '(diminish 'abbrev-mode))
 (eval-after-load "helm" '(diminish 'helm-mode))
