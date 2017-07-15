@@ -24,6 +24,25 @@
         helm-source-files-in-current-dir
         helm-source-locate))
 
+;;; helm-source-ls-git is nil until helm-ls-git-ls is invoked once.
+;;; this is a work around to initialize it until issue is fixed
+;;; https://github.com/emacs-helm/helm-ls-git/issues/47
+(setq helm-source-ls-git-status
+      (and (memq 'helm-source-ls-git-status helm-ls-git-default-sources)
+           (helm-make-source "Git status" 'helm-ls-git-status-source
+             :fuzzy-match helm-ls-git-fuzzy-match))
+      helm-source-ls-git
+      (and (memq 'helm-source-ls-git helm-ls-git-default-sources)
+           (helm-make-source "Git files" 'helm-ls-git-source
+             :fuzzy-match helm-ls-git-fuzzy-match))
+      helm-source-ls-git-buffers
+      (and (memq 'helm-source-ls-git-buffers helm-ls-git-default-sources)
+           (helm-make-source "Buffers in git project" 'helm-source-buffers
+             :header-name #'helm-ls-git-header-name
+             :buffer-list (lambda () (helm-browse-project-get-buffers
+                                      (helm-ls-git-root-dir)))
+             :keymap helm-ls-git-buffer-map)))
+
 ;;; helm ag
 (require 'helm-ag)
 (setq helm-ag-base-command "ag --nocolor --nogroup -i")
