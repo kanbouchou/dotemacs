@@ -85,7 +85,6 @@
 (add-to-list 'load-path (locate-user-emacs-file "el-get/magit/lisp")) ;; work around. doesn't work on some machines.
 (require 'magit)
 
-(el-get-bundle syohex/emacs-git-gutter-fringe :name git-gutter-fringe)
 (el-get-bundle syohex/emacs-git-messenger :name git-messenger)
 
 
