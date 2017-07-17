@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((bm :checksum "dd5dc454c62ceae6432cef6639e08db6ea6a865f")
+      '((git-messenger :checksum "83815915eb8c1cb47443ff34bca3fecf7d2edf3a")
+        (bm :checksum "dd5dc454c62ceae6432cef6639e08db6ea6a865f")
         (git-gutter-fringe :checksum "16226caab44174301f1659f7bf8cc67a76153445")
         (git-gutter :checksum "00c05264af046b5ce248e5b0bc42f117d9c27a09")
         (el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")

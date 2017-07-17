@@ -43,6 +43,9 @@
                                       (helm-ls-git-root-dir)))
              :keymap helm-ls-git-buffer-map)))
 
+;;; mlocate 0.23.1 doesn't have -A option. so overwrite default provided by helm-locate.el
+(setq helm-locate-command "locate %s -e --regex %s")
+
 ;;; helm ag
 (require 'helm-ag)
 (setq helm-ag-base-command "ag --nocolor --nogroup -i")
