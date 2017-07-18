@@ -30,10 +30,7 @@
 
 (global-linum-mode t)
 (global-git-gutter-mode t)
-(set-face-foreground 'git-gutter-fr:modified "yellow")
-(set-face-foreground 'git-gutter-fr:added    "red")
-(set-face-foreground 'git-gutter-fr:deleted  "white")
-
+(custom-set-variables '(git-gutter:update-interval 2))
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
