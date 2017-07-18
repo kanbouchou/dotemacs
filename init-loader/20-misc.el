@@ -28,8 +28,8 @@
 
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
 
+(global-linum-mode t)
 (global-git-gutter-mode t)
-(require 'git-gutter-fringe)
 (set-face-foreground 'git-gutter-fr:modified "yellow")
 (set-face-foreground 'git-gutter-fr:added    "red")
 (set-face-foreground 'git-gutter-fr:deleted  "white")
