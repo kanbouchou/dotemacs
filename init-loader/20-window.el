@@ -39,8 +39,9 @@
 (blink-cursor-mode 0)
 
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "#3e4446")
+(set-face-background 'highlight nil)
 (set-face-foreground 'highlight nil)
+(set-face-underline-p 'highlight t)
 
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "tomato")
