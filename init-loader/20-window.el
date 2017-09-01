@@ -48,6 +48,9 @@
 (set-face-background 'modeline-inactive "dim gray")
 (set-face-background 'default "#000010")
 
+(set-face-background 'cursor "yellow green")
+(set-face-background 'show-paren-match "dark green")
+
 ;;package-listのformat
 (define-derived-mode package-menu-mode tabulated-list-mode "Package Menu"
   "Major mode for browsing a list of packages.
