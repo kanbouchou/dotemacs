@@ -37,11 +37,10 @@
 
 
 (blink-cursor-mode 0)
-
-(add-to-list 'x-bitmap-file-path
-             (concat user-emacs-directory "bitmaps"))
-(custom-set-faces
- '(hl-line ((t (:stipple "underline_11pt.xbm")))))
+(custom-set-variables '(underline-minimum-offset 10))
+(set-face-background 'highlight nil)
+(set-face-foreground 'highlight nil)
+(set-face-underline-p 'highlight "dark gray")
 (global-hl-line-mode t)
 
 (set-face-foreground 'mode-line "white")
