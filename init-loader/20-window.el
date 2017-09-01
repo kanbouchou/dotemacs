@@ -38,10 +38,11 @@
 
 (blink-cursor-mode 0)
 
-(global-hl-line-mode 1)
-(set-face-background 'highlight nil)
-(set-face-foreground 'highlight nil)
-(set-face-underline-p 'highlight t)
+(add-to-list 'x-bitmap-file-path
+             (concat user-emacs-directory "bitmaps"))
+(custom-set-faces
+ '(hl-line ((t (:stipple "underline_11pt.xbm")))))
+(global-hl-line-mode t)
 
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "tomato")
