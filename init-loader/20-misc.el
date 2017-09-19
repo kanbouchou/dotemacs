@@ -29,13 +29,11 @@
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
 
 (global-linum-mode t)
+(require 'git-gutter-fringe)
 (global-git-gutter-mode t)
-(custom-set-variables '(git-gutter:update-interval 2))
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
-
-(global-linum-mode t)
 
 (fset 'yes-or-no-p 'y-or-n-p) ; y/n instead of yes/no
 
