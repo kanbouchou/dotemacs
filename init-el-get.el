@@ -49,9 +49,9 @@
 (el-get-bundle helm)
 (el-get-bundle helm-ag)
 (el-get-bundle bm)
-(el-get-bundle helm-bm)
+(el-get-bundle yasuyk/helm-bm)
 (el-get-bundle helm-company)
-(el-get-bundle helm-git-files)
+(el-get-bundle kenbeese/helm-git-files)
 (el-get-bundle helm-ls-git)
 (el-get-bundle helm-swoop)
 
@@ -64,7 +64,7 @@
 
 ;; Python
 (el-get-bundle tkf/emacs-python-environment)
-(el-get-bundle elpa:jedi-core)
+(el-get-bundle tkf/emacs-jedi jedi-core)
 (el-get-bundle epc)
 (el-get-bundle jedi)
 (el-get-bundle syohex/emacs-company-jedi :name company-jedi)

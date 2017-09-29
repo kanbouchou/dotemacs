@@ -1,5 +1,8 @@
 (setq el-get-lock-package-versions
-      '((git-messenger :checksum "83815915eb8c1cb47443ff34bca3fecf7d2edf3a")
+      '((jedi-core :checksum "b0764f425766786dfb1bff910ed1d1670f11eb9c")
+        (helm-git-files :checksum "43193960774069369ac6964bbf7c026900206fa8")
+        (helm-bm :checksum "d66341f5646c23178d4d8bffb6cfebe3fb73f1d7")
+        (git-messenger :checksum "83815915eb8c1cb47443ff34bca3fecf7d2edf3a")
         (el-get :checksum "07c75d259d89dabb34878d6085a94fb11aef1947")
         (bm :checksum "b1bc10b1e9f01c48a7eedb9b08a22d05e7baed3c")
         (git-gutter-fringe :checksum "16226caab44174301f1659f7bf8cc67a76153445")
