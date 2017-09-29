@@ -50,6 +50,9 @@
 
 (set-face-background 'cursor "yellow green")
 (set-face-background 'show-paren-match "dark green")
+(require 'bm)
+(set-face-background 'bm-face "midnight blue")
+(set-face-foreground 'bm-face nil)
 
 ;;package-listのformat
 (define-derived-mode package-menu-mode tabulated-list-mode "Package Menu"
