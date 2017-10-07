@@ -34,7 +34,7 @@
 ;; navigation inside window
 (global-set-key [M-up]    'goto-last-change)
 (global-set-key [M-down]  'goto-last-change-reverse)
-(global-set-key (kbd "M-,") 'avy-goto-char-2)
+(global-set-key (kbd "M-,") 'avy-goto-char-timer)
 
 ;; git-gutter
 (global-set-key [f1]     'git-gutter:next-hunk)
