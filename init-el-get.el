@@ -39,7 +39,6 @@
 (el-get-bundle google-this)
 
 ;; moving cursor
-(el-get-bundle goto-chg)
 (el-get-bundle abo-abo/avy)
 
 ;; Pair
