@@ -49,6 +49,11 @@
 (setq highlight-symbol-idle-delay 0.1)
 (add-hook 'prog-mode-hook 'highlight-symbol-mode)
 
-
 ;; qml-mode is not activated by deafult
 (add-to-list 'auto-mode-alist '("\\.qml\\'" . qml-mode))
+
+;; for seeing log files with colors
+(defun display-ansi-colors ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (ansi-color-apply-on-region (point-min) (point-max))))
