@@ -43,10 +43,17 @@
 (set-face-underline-p 'highlight "dark gray")
 (global-hl-line-mode t)
 
-(set-face-foreground 'mode-line "white")
-(set-face-background 'mode-line "tomato")
-(set-face-background 'modeline-inactive "dim gray")
-(set-face-background 'default "#000010")
+(defun my-out-focused-mode-line()
+  (set-face-background 'mode-line "black"))
+
+(defun my-in-focused-mode-line()
+  (set-face-foreground 'mode-line "white")
+  (set-face-background 'mode-line "tomato")
+  (set-face-background 'modeline-inactive "dim gray")
+  (set-face-background 'default "#000010"))
+
+(add-hook 'focus-out-hook 'my-out-focused-mode-line)
+(add-hook 'focus-in-hook 'my-in-focused-mode-line)
 
 (set-face-background 'cursor "yellow green")
 (set-face-background 'show-paren-match "dark green")
