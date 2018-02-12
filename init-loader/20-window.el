@@ -44,7 +44,7 @@
 (global-hl-line-mode t)
 
 (defun my-out-focused-mode-line()
-  (set-face-background 'mode-line "black"))
+  (set-face-background 'mode-line "dim gray"))
 
 (defun my-in-focused-mode-line()
   (set-face-foreground 'mode-line "white")
