@@ -74,3 +74,9 @@ Letters do not insert themselves; instead, they are commands.
   (setq tabulated-list-padding 1)
   (setq tabulated-list-sort-key (cons "Status" nil))
   (tabulated-list-init-header))
+
+(add-to-list 'display-buffer-alist
+                    `(,(rx bos "*helm" (* not-newline) "*" eos)
+                         (display-buffer-in-side-window)
+                         (inhibit-same-window . t)
+                         (window-height . 0.3)))
