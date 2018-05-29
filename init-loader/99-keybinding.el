@@ -53,14 +53,6 @@
 (global-set-key [f5]     'helm-imenu)
 
 ;; tags
-(require 'jedi)
-(add-hook 'python-mode-hook
-          '(lambda()
-             (local-set-key [f8] 'jedi:goto-definition)
-             (local-set-key [C-f8] 'jedi:goto-definition-pop-marker)
-             (local-set-key [f7] 'jedi:show-doc)
-             ))
-
 (defun rtags-keybinds()
   (local-set-key [C-f8]     'tags-pop-stack)
   (local-set-key [f8]     'tags-find-symbol-at-point)
