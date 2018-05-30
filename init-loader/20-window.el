@@ -79,4 +79,4 @@ Letters do not insert themselves; instead, they are commands.
                     `(,(rx bos "*helm" (* not-newline) "*" eos)
                          (display-buffer-in-side-window)
                          (inhibit-same-window . t)
-                         (window-height . 0.3)))
+                         (window-height . 0.4)))
