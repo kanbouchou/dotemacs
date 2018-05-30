@@ -40,25 +40,26 @@
 (custom-set-variables '(underline-minimum-offset 10))
 (set-face-background 'highlight nil)
 (set-face-foreground 'highlight nil)
-(set-face-underline-p 'highlight "dark gray")
+(set-face-underline-p 'highlight "SkyBlue4")
 (global-hl-line-mode t)
 
 (defun my-out-focused-mode-line()
-  (set-face-background 'mode-line "dim gray"))
+  (set-face-background 'mode-line "#000020"))
 
 (defun my-in-focused-mode-line()
   (set-face-foreground 'mode-line "white")
-  (set-face-background 'mode-line "tomato")
-  (set-face-background 'modeline-inactive "dim gray")
+  (set-face-background 'mode-line "midnightblue")
+  (set-face-background 'modeline-inactive "#000020")
   (set-face-background 'default "#000010"))
 
 (add-hook 'focus-out-hook 'my-out-focused-mode-line)
 (add-hook 'focus-in-hook 'my-in-focused-mode-line)
 
-(set-face-background 'cursor "yellow green")
-(set-face-background 'show-paren-match "dark green")
+(set-face-background 'cursor "dark green")
+(set-face-background 'show-paren-match "#000040")
+(set-face-background 'region "#000040")
 (require 'bm)
-(set-face-background 'bm-face "midnight blue")
+(set-face-background 'bm-face "RoyalBlue4")
 (set-face-foreground 'bm-face nil)
 
 ;;package-listのformat
