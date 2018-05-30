@@ -57,9 +57,10 @@
 
 (set-face-background 'cursor "dark green")
 (set-face-background 'show-paren-match "#000040")
+(set-face-background 'helm-selection "midnight blue")
 (set-face-background 'region "#000040")
 (require 'bm)
-(set-face-background 'bm-face "RoyalBlue4")
+(set-face-background 'bm-face "midnight blue")
 (set-face-foreground 'bm-face nil)
 
 ;;package-listのformat
