@@ -46,7 +46,7 @@
 
 ;; highlight
 (require 'highlight-symbol)
-(setq highlight-symbol-idle-delay 0.1)
+(setq highlight-symbol-idle-delay 0.2)
 (add-hook 'prog-mode-hook 'highlight-symbol-mode)
 
 ;; qml-mode is not activated by deafult
