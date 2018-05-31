@@ -10,7 +10,6 @@
 (add-hook 'irony-mode-hook 'irony-eldoc)
 
 (global-company-mode t)
-(global-auto-complete-mode nil)
 
 (eval-after-load 'company
   '(progn

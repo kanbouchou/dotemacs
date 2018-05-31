@@ -8,3 +8,4 @@
 (eval-after-load "autorevert" '(diminish 'auto-revert-mode))
 (eval-after-load "abbrev" '(diminish 'abbrev-mode))
 (eval-after-load "helm" '(diminish 'helm-mode))
+(eval-after-load "company" '(diminish 'company-mode))

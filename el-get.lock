@@ -51,7 +51,6 @@
         (exec-path-from-shell :checksum "54ea2f9c3c81d18b96e4d33c4c547e02eee420dc")
         (init-loader :checksum "5d3cea1004c11ff96b33020e337b03b925c67c42")
         (qml-mode :checksum "7a437b964b3037b191fc32ea01f3a1d367202b46")
-        (auto-complete :checksum "2e83566ddfa758c69afe50b8a1c62a66f47471e3")
         (popup :checksum "80829dd46381754639fb764da11c67235fe63282")
         (fuzzy :checksum "534d723ad2e06322ff8d9bd0ba4863d243f698e7")
         (company-irony :checksum "c51b3997f0a847d971917a4401277bf283250021")
