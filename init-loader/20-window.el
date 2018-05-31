@@ -1,6 +1,7 @@
 (setq inhibit-startup-screen t)
 
 (when window-system
+  (scroll-bar-mode -1) ;  hide scroll bar
   (menu-bar-mode -1) ; メニューバーを消す
   (tool-bar-mode -1) ; ツールバーを消す
 )
