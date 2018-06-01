@@ -44,21 +44,14 @@
 (set-face-underline-p 'highlight "SkyBlue4")
 (global-hl-line-mode t)
 
-(defun my-out-focused-mode-line()
-  (set-face-background 'mode-line "#000020"))
-
-(defun my-in-focused-mode-line()
-  (set-face-foreground 'mode-line "white")
-  (set-face-background 'mode-line "midnightblue")
-  (set-face-background 'modeline-inactive "#000020")
-  (set-face-background 'default "#000010"))
-
-(add-hook 'focus-out-hook 'my-out-focused-mode-line)
-(add-hook 'focus-in-hook 'my-in-focused-mode-line)
+(set-face-background 'default "#000010")
+(set-face-background 'mode-line-inactive "#000020")
+(set-face-foreground 'mode-line "white")
+(set-face-background 'mode-line "midnightblue")
 
 (set-face-background 'cursor "dark green")
 (set-face-background 'show-paren-match "#000040")
-(set-face-background 'helm-selection "midnight blue")
+(set-face-background 'helm-selection "SteelBlue4")
 (set-face-background 'region "#000080")
 (set-face-background 'highlight-symbol-face "steel blue")
 (require 'bm)
