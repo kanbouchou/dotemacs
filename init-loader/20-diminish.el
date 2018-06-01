@@ -9,3 +9,4 @@
 (eval-after-load "abbrev" '(diminish 'abbrev-mode))
 (eval-after-load "helm" '(diminish 'helm-mode))
 (eval-after-load "company" '(diminish 'company-mode))
+(eval-after-load "eldoc" '(diminish 'eldoc-mode))
