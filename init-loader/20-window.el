@@ -51,6 +51,10 @@
 
 (defun out-focused-mode-line()
   (set-face-background 'mode-line "#000020"))
+(defun mode-line-by-buffer-name(prev cur)
+  (if (and (not (equal nil (buffer-file-name cur))) (string-match ".*\/review\/.*" (buffer-file-name cur)))
+      (set-face-background 'mode-line "#004060")
+    (set-face-background 'mode-line "midnightblue")))
 
 (defun in-focused-mode-line()
   (set-face-background 'mode-line "midnightblue"))
@@ -58,9 +62,10 @@
 (add-hook 'focus-out-hook 'out-focused-mode-line)
 (add-hook 'focus-in-hook 'in-focused-mode-line)
 
+(add-hook 'switch-buffer-functions 'mode-line-by-buffer-name)
 
 (set-face-background 'cursor "dark green")
-(set-face-background 'show-paren-match "#000040")
+(set-face-background 'show-paren-match "skyblue4")
 (set-face-background 'helm-selection "SteelBlue4")
 (set-face-background 'region "#000080")
 (set-face-background 'highlight-symbol-face "steel blue")
