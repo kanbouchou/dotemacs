@@ -53,7 +53,7 @@
   (set-face-background 'mode-line "#000020"))
 
 (defun in-focused-mode-line()
-  (set-face-background 'mode-line "midnightblue")
+  (set-face-background 'mode-line "midnightblue"))
 
 (add-hook 'focus-out-hook 'out-focused-mode-line)
 (add-hook 'focus-in-hook 'in-focused-mode-line)
