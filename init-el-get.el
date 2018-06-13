@@ -22,6 +22,7 @@
   (add-to-list 'custom-theme-load-path default-directory))
 (el-get-bundle diminish)
 (el-get-bundle Fanael/rainbow-delimiters)
+(el-get-bundle 10sr/switch-buffer-functions-el)
 
 ;; highlighting
 (el-get-bundle col-highlight)
