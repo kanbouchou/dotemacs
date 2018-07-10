@@ -38,10 +38,21 @@
 
 
 (blink-cursor-mode 0)
-(custom-set-variables '(underline-minimum-offset 10))
 (set-face-background 'highlight nil)
 (set-face-foreground 'highlight nil)
-(set-face-underline-p 'highlight "SkyBlue4")
+
+
+(defun set-cursor(frame)
+  (select-frame frame)
+  (set-face-background 'mode-line "midnightblue")
+  (custom-set-variables '(underline-minimum-offset 10))
+  (set-face-underline-p 'highlight "coral3")
+  (set-face-background 'cursor "coral3")
+  (custom-set-variables '(cursor-type "hollow"))
+  )
+(add-hook 'after-make-frame-functions 'set-cursor)
+(set-cursor (selected-frame))
+
 (global-hl-line-mode t)
 
 (set-face-background 'default "#000010")
@@ -49,8 +60,6 @@
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "midnightblue")
 
-(defun out-focused-mode-line()
-  (set-face-background 'mode-line "#000020"))
 (defun mode-line-by-buffer-name(prev cur)
   (if (and (not (equal nil (buffer-file-name cur))) (string-match ".*\/review\/.*" (buffer-file-name cur)))
       (set-face-background 'mode-line "#004060")
@@ -64,7 +73,6 @@
 
 (add-hook 'switch-buffer-functions 'mode-line-by-buffer-name)
 
-(set-face-background 'cursor "dark green")
 (set-face-background 'show-paren-match "skyblue4")
 (set-face-background 'helm-selection "SteelBlue4")
 (set-face-background 'region "#000080")
