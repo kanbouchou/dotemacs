@@ -44,9 +44,9 @@
 
 (defun set-cursor(frame)
   (select-frame frame)
-  (set-face-background 'mode-line "midnightblue")
   (custom-set-variables '(underline-minimum-offset 10))
   (set-face-underline-p 'highlight "coral3")
+  (set-cursor-color "coral3")
   (set-face-background 'cursor "coral3")
   (custom-set-variables '(cursor-type "hollow"))
   )
@@ -67,6 +67,9 @@
 
 (defun in-focused-mode-line()
   (set-face-background 'mode-line "midnightblue"))
+
+(defun out-focused-mode-line()
+  (set-face-background 'mode-line "#000010"))
 
 (add-hook 'focus-out-hook 'out-focused-mode-line)
 (add-hook 'focus-in-hook 'in-focused-mode-line)
