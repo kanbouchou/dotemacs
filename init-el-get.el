@@ -85,6 +85,7 @@
 (el-get-bundle syohex/emacs-git-gutter-fringe :name git-gutter-fringe)
 (el-get-bundle syohex/emacs-git-messenger :name git-messenger)
 
+(el-get-bundle syohex/emacs-quickrun :name quickrun)
 
 ;; M-x
 (el-get-bundle smex)

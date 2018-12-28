@@ -52,14 +52,7 @@
 
 (global-set-key [f5]     'helm-imenu)
 
-;; tags
-(defun rtags-keybinds()
-  (local-set-key [C-f8]     'tags-pop-stack)
-  (local-set-key [f8]     'tags-find-symbol-at-point)
-  (local-set-key [f7]   'tags-find-references-at-point)
-  )
-(add-hook 'c-mode-hook   'rtags-keybinds)
-(add-hook 'c++-mode-hook 'rtags-keybinds)
+(global-set-key [f8]     'quickrun)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
