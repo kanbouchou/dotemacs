@@ -53,6 +53,7 @@
 (global-set-key [f5]     'helm-imenu)
 
 (global-set-key [f8]     'quickrun)
+(global-set-key [S-f8]   'quickrun-with-arg)
 
 ;; build operation
 (setq compilation-ask-about-save nil)
