@@ -65,6 +65,7 @@
 ;; Python
 (el-get-bundle tkf/emacs-python-environment)
 (el-get-bundle epc)
+(el-get-bundle antonj/Highlight-Indentation-for-Emacs)
 
 ;; matlab
 (el-get-bundle ruediger/matlab-emacs :name matlab-mode) ; default recipe uses cvs, which does not work behind proxy
