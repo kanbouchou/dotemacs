@@ -41,6 +41,8 @@
 
 (global-anzu-mode t)
 
+(yas-global-mode t)
+
 ;; no alarm bells
 (setq ring-bell-function 'ignore)
 
