@@ -1,9 +1,11 @@
 (setq el-get-lock-package-versions
-      '((quickrun :checksum "55bbe5d54b80206ea5a60bf2f58eb6368b2c8201")
+      '((Highlight-Indentation-for-Emacs :checksum "d03803f2c06749c430443a3d24e039cbafc9c58f")
+        (switch-buffer-functions-el :checksum "b8d8e01e21ae8c8c84234dddeb3cc8250814f7ba")
+        (quickrun :checksum "55bbe5d54b80206ea5a60bf2f58eb6368b2c8201")
         (flycheck :checksum "40ae191632c49cb4e9bac6b3841d7e27da8df34b")
         (pkg-info :checksum "76ba7415480687d05a4353b27fea2ae02b8d9d61")
         (epl :checksum "78ab7a85c08222cd15582a298a364774e3282ce6")
-        (cmake-mode :checksum "2b6ba21f26e1d6004db9940a5daf06f14571b432")
+        (cmake-mode :checksum "d6c673bb5fc58ffc1a9093a38ff1f870e436b1ce")
         (magit-popup :checksum "60ff82ac7aa8dbc24eb3c34dbed13ad01f20671c")
         (ghub :checksum "4831933da059ee084a16016558b9ccd8c581a8ff")
         (helm-git-files :checksum "43193960774069369ac6964bbf7c026900206fa8")
