@@ -79,6 +79,7 @@
 (el-get-bundle cataska/qml-mode)
 
 ;; VCS
+(el-get-bundle magit/transient)
 (el-get-bundle magit/magit)
 (add-to-list 'load-path (locate-user-emacs-file "el-get/magit/lisp")) ;; work around. doesn't work on some machines.
 (require 'magit)
