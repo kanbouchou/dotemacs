@@ -59,7 +59,8 @@
 (set-face-background 'mode-line-inactive "#000020")
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "midnightblue")
-(set-face-background 'highlight-indentation-face "#001020")
+(require 'highlight-indentation)
+(set-face-background 'highlight-indentation-face "#002040")
 
 (defun mode-line-by-buffer-name(prev cur)
   (if (and (not (equal nil (buffer-file-name cur))) (string-match ".*\/review\/.*" (buffer-file-name cur)))
