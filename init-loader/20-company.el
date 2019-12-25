@@ -19,7 +19,7 @@
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)
 (add-hook 'python-mode-hook 'company-mode)
-(add-hook 'python-mode-hook 'highlight-indentation-mode)
+(add-hook 'python-mode-hook 'highlight-indent-guides-mode)
 
 ;; rtags
 (add-to-list 'company-backends 'company-rtags)

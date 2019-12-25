@@ -59,8 +59,6 @@
 (set-face-background 'mode-line-inactive "#000020")
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "midnightblue")
-(require 'highlight-indentation)
-(set-face-background 'highlight-indentation-face "#002040")
 
 (defun mode-line-by-buffer-name(prev cur)
   (if (and (not (equal nil (buffer-file-name cur))) (string-match ".*\/review\/.*" (buffer-file-name cur)))
@@ -105,3 +103,15 @@ Letters do not insert themselves; instead, they are commands.
                          (display-buffer-in-side-window)
                          (inhibit-same-window . t)
                          (window-height . 0.4)))
+
+(require 'highlight-indent-guides)
+(setq highlight-indent-guides-method 'character)
+(setq highlight-indent-guides-character ?\|)
+;; (setq highlight-indent-guides-auto-odd-face-perc 15)
+;; (setq highlight-indent-guides-auto-even-face-perc 15)
+;; (setq highlight-indent-guides-auto-character-face-perc 20)
+(setq highlight-indent-guides-auto-enabled nil)
+
+;(set-face-background 'highlight-indent-guides-odd-face "darkgray")
+(set-face-foreground 'highlight-indent-guides-character-face "dimgray")
+;(set-face-background 'highlight-indent-guides-even-face "dimgray")
