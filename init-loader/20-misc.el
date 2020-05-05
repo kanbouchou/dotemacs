@@ -62,3 +62,13 @@
 
 ;; slow mouse wheel scrolling
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+
+
+(require 'quickrun)
+(quickrun-add-command "g++/profile"
+  '((:command . "g++")
+    (:exec    . ("%c -std=c++1z %o -o %e %s"
+		 "time %e %a"))
+    (:remove  . ("%e"))
+    (:description . "Compile C++ file with g++ and execute with time"))
+  :default "c++")
