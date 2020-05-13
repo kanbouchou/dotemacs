@@ -1,0 +1,37 @@
+# -*- mode: snippet -*-
+# name: timer
+# key: timer
+# --
+#include <iostream>
+#include <chrono>
+
+struct ScopedTimer
+{
+    ScopedTimer(const std::string& message = std::string())
+        : _message(message), _start(std::chrono::high_resolution_clock::now()), _numRun(_numTotalRun++) {}
+
+    ~ScopedTimer()
+    {
+        const auto end = std::chrono::high_resolution_clock::now();
+        double elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end-_start).count();
+        // readability
+        std::string unit = "nsec";
+        if (elapsed > 1e8) {
+            elapsed /= 1e6;
+            unit = "msec";
+        }
+        else if (elapsed > 1e5) {
+            elapsed /= 1e3;
+            unit = "usec";
+        }
+        
+        std::cout << _numRun << " " << _message << ":" << elapsed << " " << unit << std::endl;
+    }
+    
+    const std::string _message;
+    const std::chrono::time_point<std::chrono::high_resolution_clock> _start;
+    size_t _numRun;
+    static size_t _numTotalRun;
+};
+
+size_t ScopedTimer::_numTotalRun = 0;
