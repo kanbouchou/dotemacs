@@ -28,7 +28,12 @@
 
 (global-auto-revert-mode 1) ; バッファ自動再読み込み
 
-(global-linum-mode t)
+;; use display-line-numbers if available because global-linum-mode is slow
+(if (require 'display-line-numbers nil 'noerror)
+    (global-display-line-numbers-mode t)
+  (global-linum-mode t)
+)
+
 (require 'git-gutter-fringe)
 (global-git-gutter-mode t)
 
