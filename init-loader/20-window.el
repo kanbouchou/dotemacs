@@ -60,21 +60,21 @@
 (set-face-foreground 'mode-line "white")
 (set-face-background 'mode-line "midnightblue")
 
-(defun mode-line-by-buffer-name(prev cur)
-  (if (and (not (equal nil (buffer-file-name cur))) (string-match ".*\/review\/.*" (buffer-file-name cur)))
-      (set-face-background 'mode-line "#004060")
-    (set-face-background 'mode-line "midnightblue")))
+;; (defun mode-line-by-buffer-name(prev cur)
+;;   (if (and (not (equal nil (buffer-file-name cur))) (string-match ".*\/review\/.*" (buffer-file-name cur)))
+;;       (set-face-background 'mode-line "#004060")
+;;     (set-face-background 'mode-line "midnightblue")))
 
-(defun in-focused-mode-line()
-  (set-face-background 'mode-line "midnightblue"))
+;; (defun in-focused-mode-line()
+;;   (set-face-background 'mode-line "midnightblue"))
 
-(defun out-focused-mode-line()
-  (set-face-background 'mode-line "#000010"))
+;; (defun out-focused-mode-line()
+;;   (set-face-background 'mode-line "#000010"))
 
-(add-hook 'focus-out-hook 'out-focused-mode-line)
-(add-hook 'focus-in-hook 'in-focused-mode-line)
+;; (add-hook 'focus-out-hook 'out-focused-mode-line)
+;; (add-hook 'focus-in-hook 'in-focused-mode-line)
 
-(add-hook 'switch-buffer-functions 'mode-line-by-buffer-name)
+;; (add-hook 'switch-buffer-functions 'mode-line-by-buffer-name)
 
 (set-face-background 'show-paren-match "skyblue4")
 (set-face-background 'helm-selection "SteelBlue4")
@@ -115,3 +115,8 @@ Letters do not insert themselves; instead, they are commands.
 ;(set-face-background 'highlight-indent-guides-odd-face "darkgray")
 (set-face-foreground 'highlight-indent-guides-character-face "dimgray")
 ;(set-face-background 'highlight-indent-guides-even-face "dimgray")
+
+(require 'smart-mode-line)
+(defvar sml/no-confirm-load-theme t)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
