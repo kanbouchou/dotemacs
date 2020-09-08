@@ -78,6 +78,9 @@
 (el-get-bundle yoshiki/yaml-mode)
 (el-get-bundle cataska/qml-mode)
 
+;; go
+(el-get-bundle go-mode)
+
 ;; VCS
 (el-get-bundle magit/transient)
 (el-get-bundle magit/ghub)
