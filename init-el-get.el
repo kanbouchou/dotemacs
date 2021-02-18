@@ -78,6 +78,9 @@
 (el-get-bundle yoshiki/yaml-mode)
 (el-get-bundle cataska/qml-mode)
 
+;; json
+(el-get-bundle json-mode)
+
 ;; go
 (el-get-bundle go-mode)
 
