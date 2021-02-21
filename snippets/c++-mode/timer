@@ -5,31 +5,47 @@
 #include <iostream>
 #include <chrono>
 
+std::pair<double, std::string> MakeReadable(double numInNano)
+{
+    // readability
+    double num = numInNano;
+    std::string unit = "nsec";
+
+    if (num > 1e8) {
+        num /= 1e6;
+        unit = "msec";
+    }
+    else if (num > 1e5) {
+        num /= 1e3;
+        unit = "usec";
+    }
+    return make_pair(num, unit);
+}
+
 struct ScopedTimer
 {
-    ScopedTimer(const std::string& message = std::string())
-        : _message(message), _start(std::chrono::high_resolution_clock::now()), _numRun(_numTotalRun++) {}
+    ScopedTimer(const std::string& message = std::string(), int numSamples = 1)
+        : _message(message),
+          _start(std::chrono::high_resolution_clock::now()),
+          _numSamples(numSamples),
+          _numRun(_numTotalRun++) {}
 
     ~ScopedTimer()
     {
         const auto end = std::chrono::high_resolution_clock::now();
         double elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(end-_start).count();
-        // readability
-        std::string unit = "nsec";
-        if (elapsed > 1e8) {
-            elapsed /= 1e6;
-            unit = "msec";
-        }
-        else if (elapsed > 1e5) {
-            elapsed /= 1e3;
-            unit = "usec";
-        }
+        std::pair<double, std::string> totalElapsed = MakeReadable(elapsed);
+        std::pair<double, std::string> averageElapsed = MakeReadable(elapsed / _numSamples);
         
-        std::cout << _numRun << " " << _message << ":" << elapsed << " " << unit << std::endl;
+        std::cout << _numRun << " " << _message << ":"
+                  << "total=" << totalElapsed.first << " " << totalElapsed.second << ", "
+                  << "average=" << averageElapsed.first << " " << averageElapsed.second << "(" << _numSamples << " samples)"
+                  << std::endl;
     }
     
     const std::string _message;
     const std::chrono::time_point<std::chrono::high_resolution_clock> _start;
+    size_t _numSamples;
     size_t _numRun;
     static size_t _numTotalRun;
 };
