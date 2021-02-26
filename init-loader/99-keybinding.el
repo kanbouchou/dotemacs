@@ -6,23 +6,23 @@
 (global-set-key (kbd "C-S-SPC") 'toggle-input-method)
 
 
-(global-set-key (kbd "M-x")   'smex)
-(global-set-key (kbd "M-y")   'helm-show-kill-ring)
+(global-set-key (kbd "M-x")   'counsel-M-x)
+(global-set-key (kbd "M-y")   'counsel-yank-pp)
 
 ;; anzu
 (global-set-key (kbd "M-%")   'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
 (global-set-key (kbd "C-?")  'helm-apropos)
-(global-set-key (kbd "C-;")  'helm-for-files)
-(global-set-key (kbd "C-'")  'helm-mini)
-(global-set-key (kbd "C-.")  'helm-do-ag-project-root)
+(global-set-key (kbd "C-;")  'counsel-find-file)
+(global-set-key (kbd "C-'")  'counsel-ibuffer)
+(global-set-key (kbd "C-.")  'counsel-git-grep)
 (global-set-key (kbd "C->")  'helm-ag-project-root)
-(global-set-key (kbd "C-,")  'helm-multi-swoop-all)
+(global-set-key (kbd "C-,")  'swiper-all-thing-at-point)
 (global-set-key (kbd "C-o")  'other-frame) ; overwrite open-line
 (global-set-key (kbd "C-h")  'delete-backward-char); over
-(global-set-key (kbd "C-]")  'helm-resume)
-(global-set-key (kbd "C-z")  'helm-occur-from-isearch) ;
+(global-set-key (kbd "C-]")  'ivy-resume)
+(global-set-key (kbd "C-z")  'swiper-from-isearch) ;
 
 ;; window operation
 (global-set-key (kbd "C-t")  'other-window); overwrite transpose-chars
@@ -50,7 +50,7 @@
 (global-set-key [f4]     'align-current)
 (global-set-key [C-f4]   'align-regexp)
 
-(global-set-key [f5]     'helm-imenu)
+(global-set-key [f5]     'counsel-imenu)
 
 (global-set-key [f8]     'quickrun)
 (global-set-key [S-f8]   'quickrun-with-arg)

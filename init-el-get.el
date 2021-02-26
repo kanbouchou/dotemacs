@@ -46,18 +46,18 @@
 (el-get-bundle smartparens)
 
 ;; helm
-(el-get-bundle helm)
-(el-get-bundle helm-ag)
-(el-get-bundle bm)
-(el-get-bundle yasuyk/helm-bm)
-(el-get-bundle helm-company)
-(el-get-bundle kenbeese/helm-git-files)
-(el-get-bundle helm-ls-git)
-(el-get-bundle helm-swoop)
+;; (el-get-bundle helm)
+;; (el-get-bundle helm-ag)
+;; (el-get-bundle bm)
+;; (el-get-bundle yasuyk/helm-bm)
+;; (el-get-bundle helm-company)
+;; (el-get-bundle kenbeese/helm-git-files)
+;; (el-get-bundle helm-ls-git)
+;; (el-get-bundle helm-swoop)
 
 ;; tag
 ;; (el-get-bundle rtags)
-(el-get-bundle helm-gtags)
+;; (el-get-bundle helm-gtags)
 
 ;; snippet
 (el-get-bundle yasnippet)
@@ -101,10 +101,14 @@
 (el-get-bundle smex)
 
 ;; snippet
-(el-get-bundle emacs-jp/helm-c-yasnippet)
+;; (el-get-bundle emacs-jp/helm-c-yasnippet)
 
 ;; misc
 (el-get-bundle open-junk-file)
 
 ;; mode line
 (el-get-bundle smart-mode-line)
+
+;; ivy
+(el-get-bundle "abo-abo/swiper")
+
