@@ -15,6 +15,7 @@
 
 (global-set-key (kbd "C-;")  'counsel-git)
 (global-set-key (kbd "C-'")  'counsel-ibuffer)
+(global-set-key (kbd "C-\"")  'counsel-switch-buffer-other-window)
 (global-set-key (kbd "C-.")  'counsel-git-grep-at-point)
 (global-set-key (kbd "C->")  'helm-ag-project-root)
 (global-set-key (kbd "C-,")  'swiper-all-thing-at-point)
