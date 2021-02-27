@@ -14,6 +14,7 @@
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
 (global-set-key (kbd "C-;")  'counsel-git)
+(global-set-key (kbd "C-:")  'counsel-recentf)
 (global-set-key (kbd "C-'")  'counsel-ibuffer)
 (global-set-key (kbd "C-\"")  'counsel-switch-buffer-other-window)
 (global-set-key (kbd "C-.")  'counsel-git-grep-at-point)

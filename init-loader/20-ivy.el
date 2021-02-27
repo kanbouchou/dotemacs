@@ -1,10 +1,16 @@
 ;; ivy設定
 (require 'ivy)
 
-(ivy-mode 1)
+;(ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 (setq ivy-height 20)
+(setq
+ ivy-height-alist
+      '((counsel-evil-registers . 5)
+                         (counsel-yank-pop . 20)
+                         (counsel-git-log . 4)))
+
 (setq ivy-extra-directories nil)
 (setq ivy-re-builders-alist
       '((t . ivy--regex-plus)))
