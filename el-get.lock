@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((swiper :checksum "e005666df39ca767e6d5ab71b1a55d8c08395259")
+      '((symbol-overlay :checksum "5bcd6d7e3f3b6501ccec3e6c378f33f7e7488c99")
+        (swiper :checksum "e005666df39ca767e6d5ab71b1a55d8c08395259")
         (go-mode :checksum "49a538028e63dbe20f428c52d91f09b70b564626")
         (json-mode :checksum "0e819e519ae17a2686e0881c4ca51fa873fa9b83")
         (json-snatcher :checksum "b28d1c0670636da6db508d03872d96ffddbc10f2")

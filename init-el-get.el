@@ -112,3 +112,4 @@
 ;; ivy
 (el-get-bundle "abo-abo/swiper")
 
+(el-get-bundle wolray/symbol-overlay)
