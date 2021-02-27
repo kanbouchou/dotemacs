@@ -1,5 +1,9 @@
 (setq el-get-lock-package-versions
-      '((helm :checksum "aba65b4504b784dc86ded97f8ecdc87469077839")
+      '((swiper :checksum "e005666df39ca767e6d5ab71b1a55d8c08395259")
+        (go-mode :checksum "49a538028e63dbe20f428c52d91f09b70b564626")
+        (json-mode :checksum "0e819e519ae17a2686e0881c4ca51fa873fa9b83")
+        (json-snatcher :checksum "b28d1c0670636da6db508d03872d96ffddbc10f2")
+        (json-reformat :checksum "8eb6668ed447988aea06467ba8f42e1f2178246f")
         (highlight-indent-guides-mode :checksum "0b10f38c54ffc099861ce8463e16a1b07ddbb203")
         (highlight-indent-guides :checksum "0b10f38c54ffc099861ce8463e16a1b07ddbb203")
         (treepy :checksum "b40e6b09eb9be45da67b8c9e4990a5a0d7a2a09d")

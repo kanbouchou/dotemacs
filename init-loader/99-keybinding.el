@@ -13,8 +13,7 @@
 (global-set-key (kbd "M-%")   'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
-(global-set-key (kbd "C-?")  'helm-apropos)
-(global-set-key (kbd "C-;")  'counsel-find-file)
+(global-set-key (kbd "C-;")  'counsel-git)
 (global-set-key (kbd "C-'")  'counsel-ibuffer)
 (global-set-key (kbd "C-.")  'counsel-git-grep)
 (global-set-key (kbd "C->")  'helm-ag-project-root)
@@ -67,7 +66,6 @@
 
 ;; bookmark
 (global-set-key [f11]    'bm-toggle)
-(global-set-key [S-f11]  'helm-bm)
 (global-set-key [f12]    'bm-next)
 (global-set-key [S-f12]  'bm-previous)
 
