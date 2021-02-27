@@ -18,3 +18,16 @@
       (apply #'read-file-name-default args))))
 
 (define-key counsel-mode-map [remap find-file] nil)
+
+;; counsel-git-grep search thing at point
+(defun my-ivy-with-thing-at-point (cmd &optional dir)
+  "Wrap a call to CMD with setting "
+  (let ((ivy-initial-inputs-alist
+         (list
+          (cons cmd (thing-at-point 'symbol)))))
+    (funcall cmd nil dir)))
+
+(defun counsel-git-grep-at-point ()
+  (interactive)
+  (my-ivy-with-thing-at-point
+   'counsel-git-grep))
