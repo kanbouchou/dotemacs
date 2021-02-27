@@ -7,7 +7,7 @@
 
 
 (global-set-key (kbd "M-x")   'counsel-M-x)
-(global-set-key (kbd "M-y")   'counsel-yank-pp)
+(global-set-key (kbd "M-y")   'counsel-yank-pop)
 
 ;; anzu
 (global-set-key (kbd "M-%")   'anzu-query-replace)
