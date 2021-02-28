@@ -38,4 +38,4 @@
 (setq ivy-re-builders-alist
       '((ivy-switch-buffer . ivy--regex-plus)
         (t . ivy--regex-fuzzy)))
-(setq ivy-initial-inputs-alist nil)
+;(setq ivy-initial-inputs-alist nil)
