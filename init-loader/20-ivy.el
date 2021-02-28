@@ -36,5 +36,6 @@
 ;; use fuzzy matcher
 ;; https://oremacs.com/2016/01/06/ivy-flx/
 (setq ivy-re-builders-alist
-      '((t . ivy--regex-fuzzy)))
+      '((ivy-switch-buffer . ivy--regex-plus)
+        (t . ivy--regex-fuzzy)))
 (setq ivy-initial-inputs-alist nil)
