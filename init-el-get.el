@@ -45,10 +45,11 @@
 ;; Pair
 (el-get-bundle smartparens)
 
+(el-get-bundle bm)
+
 ;; helm
 ;; (el-get-bundle helm)
 ;; (el-get-bundle helm-ag)
-;; (el-get-bundle bm)
 ;; (el-get-bundle yasuyk/helm-bm)
 ;; (el-get-bundle helm-company)
 ;; (el-get-bundle kenbeese/helm-git-files)
