@@ -16,7 +16,7 @@
 ;;; which-function-modeを大きなpythonファイルで使うと重くなる
 ;;; https://github.com/bbatsov/prelude/issues/703
 (which-function-mode 0)
-(add-hook 'python-mode-hook 'highlight-indentation-mode)
+;;; (add-hook 'python-mode-hook 'highlight-indentation-mode)
 
 
 ;;; spelling check
