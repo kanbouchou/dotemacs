@@ -1,7 +1,7 @@
 ;; ivy設定
 (require 'ivy)
 
-;(ivy-mode 1)
+(ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 (setq ivy-height 20)
@@ -12,8 +12,6 @@
                          (counsel-git-log . 4)))
 
 (setq ivy-extra-directories nil)
-(setq ivy-re-builders-alist
-      '((t . ivy--regex-plus)))
 
 
 ;; disable ivy find-file
@@ -42,6 +40,9 @@
 ;; use fuzzy matcher
 ;; https://oremacs.com/2016/01/06/ivy-flx/
 (setq ivy-re-builders-alist
-      '((ivy-switch-buffer . ivy--regex-plus)
-        (t . ivy--regex-fuzzy)))
-;(setq ivy-initial-inputs-alist nil)
+      '((counsel-git-grep . ivy--regex-ignore-order)
+        (t . ivy--regex-ignore-order)))
+;;(setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
+(setq ivy-re-builders-alist
+      (add-to-list 'ivy-re-builders-alist '(t . ivy--regex-ignore-order)))
+;;(setq ivy-initial-inputs-alist nil)
