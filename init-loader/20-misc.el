@@ -69,7 +69,7 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 
 ;; junk file
-(setq open-junk-file-format "/home/mujin/junk/%Y/%m/%Y-%m-%d-%H%M%S.")
+(setq open-junk-file-format (format "%s/%s" (getenv "HOME") "junk/%Y/%m/%Y-%m-%d-%H%M%S."))
 
 (require 'quickrun)
 (quickrun-add-command "g++/profile"
