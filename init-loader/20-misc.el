@@ -12,6 +12,7 @@
 (setq-default indent-tabs-mode nil)	; インデントに空白を使う
 
 (setq compilation-scroll-output t) ;; コンパイルバッファの追跡
+(setq compilation-skip-threshold 2) ;; skip warning, just move to errors. https://emacs.stackexchange.com/a/13647
 
 (setq kill-whole-line t) ;;; 行の先頭でC-kを一回押すだけで行全体を消去する
 (setq require-final-newline t) ;;; 最終行に必ず一行挿入する
