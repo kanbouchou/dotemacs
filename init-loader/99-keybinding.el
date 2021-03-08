@@ -67,8 +67,12 @@
 (global-set-key [S-f10]  'previous-error)
 
 ;; bookmark
-(global-set-key [f11]    'bm-toggle)
-(global-set-key [f12]    'bm-next)
+(global-set-key [f11]    'symbol-overlay-put)
+(global-set-key [S-f11]  'symbol-overlay-jump-next)
+(global-set-key [C-f11]  'symbol-overlay-jump-prev)
+
+(global-set-key [f12]    'bm-toggle)
+(global-set-key [S-f12]  'bm-next)
 (global-set-key [S-f12]  'bm-previous)
 
 ;; google-this
