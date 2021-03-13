@@ -70,6 +70,7 @@
 (global-set-key [f11]    'symbol-overlay-put)
 (global-set-key [S-f11]  'symbol-overlay-jump-next)
 (global-set-key [C-f11]  'symbol-overlay-jump-prev)
+(global-set-key [C-S-f11]  'symbol-overlay-switch-forward)
 
 (global-set-key [f12]    'bm-toggle)
 (global-set-key [S-f12]  'bm-next)
