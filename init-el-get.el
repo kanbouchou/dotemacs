@@ -112,5 +112,6 @@
 
 ;; ivy
 (el-get-bundle "abo-abo/swiper")
+(el-get-bundle "ericdanan/counsel-projectile")
 
 (el-get-bundle wolray/symbol-overlay)
