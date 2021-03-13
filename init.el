@@ -24,6 +24,7 @@
  '(ag-highlight-search t)
  '(ag-reuse-buffers (quote nil))
  '(ag-reuse-window (quote nil))
+ '(counsel-projectile-ag-initial-input (quote (ivy-thing-at-point)))
  '(cursor-type "hollow")
  '(el-get-verbose t)
  '(init-loader-show-log-after-init (quote error-only))
