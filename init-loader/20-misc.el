@@ -53,9 +53,9 @@
 (setq ring-bell-function 'ignore)
 
 ;; highlight
-(require 'highlight-symbol)
-(setq highlight-symbol-idle-delay 0.2)
-(add-hook 'prog-mode-hook 'highlight-symbol-mode)
+;(require 'highlight-symbol)
+;(setq highlight-symbol-idle-delay 0.2)
+; (add-hook 'prog-mode-hook 'highlight-symbol-mode)
 
 ;; qml-mode is not activated by deafult
 (add-to-list 'auto-mode-alist '("\\.qml\\'" . qml-mode))
