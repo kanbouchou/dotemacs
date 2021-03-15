@@ -17,12 +17,13 @@
 
 ;; disable ivy find-file
 ;; https://emacs.stackexchange.com/questions/45929/disable-ivy-for-find-file
-(setq read-file-name-function
-  (lambda (&rest args)
-    (let ((completing-read-function #'completing-read-default))
-      (apply #'read-file-name-default args))))
-
-(define-key counsel-mode-map [remap find-file] nil)
+(defun my-disable-counsel-find-file (&rest args)
+  "Disable `counsel-find-file' and use the original `find-file' with ARGS."
+  (let ((completing-read-function #'completing-read-default)
+        (completion-in-region-function #'completion--in-region))
+    (apply #'read-file-name-default args)))
+(setq read-file-name-function #'my-disable-counsel-find-file)
+(define-key counsel-mode-map [remap find-file]  nil)
 
 ;; counsel-git-grep search thing at point
 (defun my-ivy-with-thing-at-point (cmd &optional dir)
