@@ -77,10 +77,10 @@
 
 (set-face-background 'show-paren-match "skyblue4")
 (set-face-background 'region "#000080")
-(set-face-background 'highlight-symbol-face "steel blue")
+;;(set-face-background 'highlight-symbol-face "steel blue")
 (require 'bm)
-(set-face-background 'bm-face "midnight blue")
-(set-face-foreground 'bm-face nil)
+(set-face-background 'bm-face "blue")
+(custom-set-variables '(bm-highlight-style (quote bm-highlight-only-fringe)))
 
 ;;package-listのformat
 (define-derived-mode package-menu-mode tabulated-list-mode "Package Menu"
@@ -103,12 +103,13 @@ Letters do not insert themselves; instead, they are commands.
                          (window-height . 0.4)))
 
 (require 'highlight-indent-guides)
-(setq highlight-indent-guides-method 'character)
-(setq highlight-indent-guides-character ?\|)
+;(setq highlight-indent-guides-method 'character)
+;(setq highlight-indent-guides-character ?\|)
 ;; (setq highlight-indent-guides-auto-odd-face-perc 15)
 ;; (setq highlight-indent-guides-auto-even-face-perc 15)
 ;; (setq highlight-indent-guides-auto-character-face-perc 20)
 (setq highlight-indent-guides-auto-enabled nil)
+(add-hook 'python-mode-hook 'highlight-indent-guides-mode)
 
 ;(set-face-background 'highlight-indent-guides-odd-face "darkgray")
 (set-face-foreground 'highlight-indent-guides-character-face "dimgray")
