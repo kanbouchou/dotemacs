@@ -119,3 +119,10 @@ Letters do not insert themselves; instead, they are commands.
 (defvar sml/no-confirm-load-theme t)
 (setq sml/no-confirm-load-theme t)
 (sml/setup)
+
+; ok but slow
+;; (setq highlight-indent-guides-method 'character)
+;; (setq highlight-indent-guides-responsive 'stack)
+
+;(setq highlight-indent-guides-auto-enabled t)
+;(setq highlight-indent-guides-character ?\|)
