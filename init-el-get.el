@@ -108,10 +108,13 @@
 (el-get-bundle open-junk-file)
 
 ;; mode line
-(el-get-bundle smart-mode-line)
+(el-get-bundle seagle0128/doom-modeline)
+(el-get-bundle antonio/delight.el :name delight)
+(el-get-bundle hlissner/emacs-doom-themes :name doom-themes)
 
 ;; ivy
 (el-get-bundle "abo-abo/swiper")
 (el-get-bundle "ericdanan/counsel-projectile")
 
 (el-get-bundle wolray/symbol-overlay)
+
