@@ -25,7 +25,7 @@
 (setq doom-modeline-icon nil)
 
 (require 'doom-themes)
-(load-theme 'doom-vibrant t)
+(load-theme 'doom-tomorrow-night t)
 
 (require 'delight)
 (delight 'rainbow-mode)
