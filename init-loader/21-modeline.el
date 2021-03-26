@@ -1,4 +1,3 @@
-
 (when window-system
   (scroll-bar-mode -1) ;  hide scroll bar
   (menu-bar-mode -1) ; メニューバーを消す
@@ -32,3 +31,9 @@
 (delight 'emacs-lisp-mode :major)
 (delight 'c++-mode :major)
 (delight 'python-mode :major)
+
+
+(require 'symbol-overlay)
+(define-globalized-minor-mode my-global-symbol-overlay-mode symbol-overlay-mode
+  (lambda () (symbol-overlay-mode 1)))
+(my-global-symbol-overlay-mode 1)
