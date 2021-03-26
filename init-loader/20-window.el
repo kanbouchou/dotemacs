@@ -35,6 +35,9 @@
 (set-face-background 'highlight nil)
 (set-face-foreground 'highlight nil)
 
+(setq line-number-mode nil)
+(setq column-number-mode nil)
+(setq mode-line-percent-position nil)
 
 (defun set-cursor(frame)
   (select-frame frame)
@@ -71,10 +74,6 @@
 (set-face-foreground 'highlight-indent-guides-character-face "dimgray")
 ;(set-face-background 'highlight-indent-guides-even-face "dimgray")
 
-(require 'smart-mode-line)
-(defvar sml/no-confirm-load-theme t)
-(setq sml/no-confirm-load-theme t)
-(sml/setup)
 
 ; ok but slow
 ;; (setq highlight-indent-guides-method 'character)
