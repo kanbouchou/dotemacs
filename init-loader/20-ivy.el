@@ -48,3 +48,4 @@
 (setq ivy-re-builders-alist
       (add-to-list 'ivy-re-builders-alist '(t . ivy--regex-ignore-order)))
 (setq ivy-initial-inputs-alist nil)
+(setq counsel-yank-pop-separator "\n----\n")
