@@ -61,17 +61,17 @@
 (set-face-background 'bm-face "blue")
 (custom-set-variables '(bm-highlight-style (quote bm-highlight-only-fringe)))
 
-(require 'highlight-indent-guides)
+; (require 'highlight-indent-guides)
 ;(setq highlight-indent-guides-method 'character)
 ;(setq highlight-indent-guides-character ?\|)
 ;; (setq highlight-indent-guides-auto-odd-face-perc 15)
 ;; (setq highlight-indent-guides-auto-even-face-perc 15)
 ;; (setq highlight-indent-guides-auto-character-face-perc 20)
-(setq highlight-indent-guides-auto-enabled nil)
-(add-hook 'python-mode-hook 'highlight-indent-guides-mode)
+; (setq highlight-indent-guides-auto-enabled nil)
+; (add-hook 'python-mode-hook 'highlight-indent-guides-mode)
 
 ;(set-face-background 'highlight-indent-guides-odd-face "darkgray")
-(set-face-foreground 'highlight-indent-guides-character-face "dimgray")
+; (set-face-foreground 'highlight-indent-guides-character-face "dimgray")
 ;(set-face-background 'highlight-indent-guides-even-face "dimgray")
 
 
