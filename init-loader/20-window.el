@@ -12,10 +12,10 @@
              (ansi-color-apply-on-region (point-min) (point-max))))
 
 ;; theme
-(require 'clarity-theme)
-(load-theme 'clarity t)
-(enable-theme 'clarity)
-(setq frame-background-mode 'dark)
+;; (require 'clarity-theme)
+;; (load-theme 'clarity t)
+;; (enable-theme 'clarity)
+;; (setq frame-background-mode 'dark)
 
 (defun other-window-or-split ()
   (interactive)
@@ -51,8 +51,7 @@
 
 (global-hl-line-mode t)
 
-(set-face-background 'default "#000010")
-
+;(set-face-background 'default "#000010")
 
 (set-face-background 'show-paren-match "skyblue4")
 (set-face-background 'region "#000080")
