@@ -1,5 +1,8 @@
 (setq el-get-lock-package-versions
-      '((highlight-indentation :checksum "d88db4248882da2d4316e76ed673b4ac1fa99ce3")
+      '((pyvenv :checksum "045ff9476dac26086a04538d9b7ba186aa8f0fd1")
+        (find-file-in-project :checksum "84c47cb4e47017421bd3d656f77357d93a90d526")
+        (cmake-mode :checksum "32ae61255b5646c78c5c5ad152bbd3654ac15f92")
+        (highlight-indentation :checksum "d88db4248882da2d4316e76ed673b4ac1fa99ce3")
         (doom-themes :checksum "4199e74db170200995ee8dfbb55ffae004d6e219")
         (delight :checksum "9e1609b48afc8080745edfccc9f00e7b72031047")
         (doom-modeline :checksum "0a7b36d7ed09a64298456d0409277069cd0a2320")
@@ -26,7 +29,6 @@
         (flycheck :checksum "40ae191632c49cb4e9bac6b3841d7e27da8df34b")
         (pkg-info :checksum "76ba7415480687d05a4353b27fea2ae02b8d9d61")
         (epl :checksum "78ab7a85c08222cd15582a298a364774e3282ce6")
-        (cmake-mode :checksum "d6c673bb5fc58ffc1a9093a38ff1f870e436b1ce")
         (magit-popup :checksum "60ff82ac7aa8dbc24eb3c34dbed13ad01f20671c")
         (ghub :checksum "4831933da059ee084a16016558b9ccd8c581a8ff")
         (git-messenger :checksum "83815915eb8c1cb47443ff34bca3fecf7d2edf3a")

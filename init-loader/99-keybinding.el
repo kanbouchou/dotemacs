@@ -63,8 +63,8 @@
 (global-set-key [S-f9]   'compile)
 
 ;; navigation: error
-(global-set-key [f10]    'next-error)
-(global-set-key [S-f10]  'previous-error)
+(global-set-key [f10]    'outline-toggle-children)
+(global-set-key [S-f10]  'outline-show-subtree)
 
 ;; bookmark
 (global-set-key [f11]    'symbol-overlay-put)
@@ -72,9 +72,12 @@
 (global-set-key [C-f11]  'symbol-overlay-jump-prev)
 (global-set-key [C-S-f11]  'symbol-overlay-switch-forward)
 
-(global-set-key [f12]    'bm-toggle)
-(global-set-key [S-f12]  'bm-next)
+(global-set-key [C-f12]  'bm-toggle)
+(global-set-key [f12]    'bm-next)
 (global-set-key [S-f12]  'bm-previous)
 
 ;; google-this
 (global-set-key (kbd "C-x C-g") 'google-this)
+
+;; google-this
+(global-set-key (kbd "C-M-p") 'backward-list)

@@ -22,10 +22,10 @@
 (doom-modeline-mode 1)
 
 (require 'doom-themes)
-(load-theme 'doom-molokai t)
+(load-theme 'doom-badger t)
 
 
-(require 'symbol-overlay)
-(define-globalized-minor-mode my-global-symbol-overlay-mode symbol-overlay-mode
-  (lambda () (symbol-overlay-mode 1)))
-(my-global-symbol-overlay-mode 1)
+;; (require 'symbol-overlay)
+;; (define-globalized-minor-mode my-global-symbol-overlay-mode symbol-overlay-mode
+;;   (lambda () (symbol-overlay-mode 1)))
+;; (my-global-symbol-overlay-mode 1)

@@ -18,6 +18,7 @@
 (which-function-mode 0)
 ;;; (add-hook 'python-mode-hook 'highlight-indentation-mode)
 
+(add-hook 'python-mode-hook 'outline-minor-mode)
 
 ;;; spelling check
 ;(setq-default flyspell-mode t)
