@@ -51,3 +51,12 @@ struct ScopedTimer
 };
 
 size_t ScopedTimer::_numTotalRun = 0;
+
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+
+}
