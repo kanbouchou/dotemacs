@@ -41,7 +41,7 @@
         (yasnippet :checksum "5a29fe67d70de3749e30ebb37206395b4d1a51a8")
         (smex :checksum "55aaebe3d793c2c990b39a302eb26c184281c42c")
         (fringe-helper :checksum "ef4a9c023bae18ec1ddd7265f1f2d6d2e775efdd")
-        (magit :checksum "50d0ea2a52114d3ac88125f0a211c19336d67620")
+        (magit :checksum "03f495f351d6e622143e4628681019df1313a5f2")
         (with-editor :checksum "ad5bb005ed3afec2d8b9b2bc1df19fb9b5e2dd84")
         (emacs-async :checksum "6fa6a866b4b31908166e010ac60e77927bdbfc5a")
         (yaml-mode :checksum "40067a10ac1360f0b9533f0bbbb2eea128e2574d")
