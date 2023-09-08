@@ -17,7 +17,7 @@
 (global-set-key (kbd "C-:")  'counsel-recentf)
 (global-set-key (kbd "C-'")  'counsel-switch-buffer)
 (global-set-key (kbd "C-\"")  'counsel-switch-buffer-other-window)
-(global-set-key (kbd "C-.")  'counsel-projectile-ag)
+(global-set-key (kbd "C-.")  'counsel-projectile-rg)
 (global-set-key (kbd "C->")  'helm-ag-project-root)
 (global-set-key (kbd "C-,")  'swiper-all-thing-at-point)
 (global-set-key (kbd "C-o")  'other-frame) ; overwrite open-line
@@ -67,9 +67,9 @@
 (global-set-key [S-f10]  'outline-show-subtree)
 
 ;; bookmark
-(global-set-key [f11]    'symbol-overlay-put)
-(global-set-key [S-f11]  'symbol-overlay-jump-next)
-(global-set-key [C-f11]  'symbol-overlay-jump-prev)
+(global-set-key [C-f11]    'symbol-overlay-put)
+(global-set-key [f11]  'symbol-overlay-jump-next)
+(global-set-key [S-f11]  'symbol-overlay-jump-prev)
 (global-set-key [C-S-f11]  'symbol-overlay-switch-forward)
 
 (global-set-key [C-f12]  'bm-toggle)

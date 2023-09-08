@@ -1,3 +1,4 @@
+
 (add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
@@ -32,9 +33,9 @@
 (el-get-bundle syohex/emacs-anzu :name anzu)
 
 ;; search and edit multiple files
-(el-get-bundle ag)
+(el-get-bundle dajva/rg.el :name rg)
 (el-get-bundle mhayashi1120/Emacs-wgrep :name wgrep)
-(el-get-bundle wgrep-ag)
+;(el-get-bundle wgrep-rg)
 
 ;; search web
 (el-get-bundle google-this)

@@ -32,33 +32,33 @@
 
 
 (blink-cursor-mode 0)
-(set-face-background 'highlight nil)
-(set-face-foreground 'highlight nil)
+;(set-face-background 'highlight nil)
+;(set-face-foreground 'highlight nil)
 
 (setq line-number-mode nil)
 (setq column-number-mode nil)
 (setq mode-line-percent-position nil)
 
-(defun set-cursor(frame)
-  (select-frame frame)
-  (custom-set-variables '(underline-minimum-offset 10))
-  (set-face-underline-p 'highlight "coral3")
-  (set-face-background 'cursor "lime green")
-  (custom-set-variables '(cursor-type (quote (hbar . 5))))
-  )
-(add-hook 'after-make-frame-functions 'set-cursor)
-(set-cursor (selected-frame))
+;; (defun set-cursor(frame)
+;;   (select-frame frame)
+;;   ;(custom-set-variables '(underline-minimum-offset 10))
+;;   (set-face-underline-p 'highlight "coral3")
+;;   (set-face-background 'cursor "lime green")
+;;   ;;(custom-set-variables '(cursor-type (quote (hbar . 5))))
+;;   )
+;;(add-hook 'after-make-frame-functions 'set-cursor)
+;;(set-cursor (selected-frame))
 
 (global-hl-line-mode t)
 
 ;(set-face-background 'default "#000010")
 
-(set-face-background 'show-paren-match "skyblue4")
-(set-face-background 'region "#000080")
+;(set-face-background 'show-paren-match "skyblue4")
+;(set-face-background 'region "#000080")
 ;;(set-face-background 'highlight-symbol-face "steel blue")
 (require 'bm)
-(set-face-background 'bm-face "blue")
-(custom-set-variables '(bm-highlight-style (quote bm-highlight-only-fringe)))
+;(set-face-background 'bm-face "blue")
+;(custom-set-variables '(bm-highlight-style (quote bm-highlight-only-fringe)))
 
 ; (require 'highlight-indent-guides)
 ;(setq highlight-indent-guides-method 'character)
@@ -67,8 +67,7 @@
 ;; (setq highlight-indent-guides-auto-even-face-perc 15)
 ;; (setq highlight-indent-guides-auto-character-face-perc 20)
 ; (setq highlight-indent-guides-auto-enabled nil)
-; (add-hook 'python-mode-hook 'highlight-indent-guides-mode)
-
+(add-hook 'python-mode-hook 'highlight-indent-guides-mode)
 ;(set-face-background 'highlight-indent-guides-odd-face "darkgray")
 ; (set-face-foreground 'highlight-indent-guides-character-face "dimgray")
 ;(set-face-background 'highlight-indent-guides-even-face "dimgray")
