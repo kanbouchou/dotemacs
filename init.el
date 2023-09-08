@@ -34,8 +34,5 @@
  '(underline-minimum-offset 10))
 (init-loader-load (concat user-emacs-directory "init-loader"))
 (setq highlight-indent-guides-bitmap-function 'highlight-indent-guides--bitmap-line)
-((t
-  (:underline
-   (:color foreground-color :style line))))
 
 (setq counsel-rg-base-command "rg --max-columns 5000 --with-filename --no-heading --line-number --color never %s")

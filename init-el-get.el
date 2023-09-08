@@ -87,7 +87,7 @@
 (el-get-bundle go-mode)
 
 ;; VCS
-(el-get-bundle magit/transient)
+;(el-get-bundle magit/transient)
 (el-get-bundle magit/ghub)
 (el-get-bundle magit/magit-popup)
 (el-get-bundle magit/magit)
@@ -109,6 +109,7 @@
 (el-get-bundle open-junk-file)
 
 ;; mode line
+(el-get-bundle rainstormstudio/nerd-icons.el :name nerd-icons)
 (el-get-bundle seagle0128/doom-modeline)
 (el-get-bundle antonio/delight.el :name delight)
 (el-get-bundle hlissner/emacs-doom-themes :name doom-themes)
