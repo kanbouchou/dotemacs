@@ -25,4 +25,6 @@
   )
 
 ;(set-if-font-exists-p "Ricty Diminished")
+; on bulls eye, known as `Regular', on some other system known as just `R'?
+(set-if-font-exists-p "Source Han Code JP Regular")
 (set-if-font-exists-p "Source Han Code JP R")
