@@ -48,8 +48,8 @@
 (global-set-key [C-f3]   'magit-diff)
 
 ;; align
-(global-set-key [f4]     'align-current)
-(global-set-key [C-f4]   'align-regexp)
+;; (global-set-key [f4]     'align-current)
+;; (global-set-key [C-f4]   'align-regexp)
 
 (global-set-key [f5]     'counsel-imenu)
 
