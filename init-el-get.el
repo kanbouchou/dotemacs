@@ -61,6 +61,8 @@
 ;; (el-get-bundle rtags)
 ;; (el-get-bundle helm-gtags)
 
+(el-get-bundle jdtsmith/indent-bars)
+
 ;; snippet
 (el-get-bundle yasnippet)
 
