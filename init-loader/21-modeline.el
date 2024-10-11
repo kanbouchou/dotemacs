@@ -22,7 +22,8 @@
 (doom-modeline-mode 1)
 
 (require 'doom-themes)
-(load-theme 'doom-badger t)
+;(load-theme 'doom-badger t)
+(load-theme 'doom-sourcerer t)
 
 
 ;; (require 'symbol-overlay)
